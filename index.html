@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="light">
+<html lang="de" data-theme="dark">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18320558788"></script>
@@ -32,9 +32,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Finora Consulting SNC",
-  "legalName": "Finora Consulting SNC",
-  "taxID": "CHE-222.837.088",
+  "name": "Finora",
   "description": "Independent international cross-border advisory firm providing strategic clarity, forensic analysis, and coordinated expertise for complex financial, legal, and commercial matters.",
   "url": "https://finora.eu",
   "email": "enquiries@finora.eu",
@@ -54,8 +52,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<meta name="theme-color" content="#F4EFE6"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<meta name="theme-color" content="#0A0907"/>
 <style>
 /* ═══════════ FINORA — "Horizon" identity ═══════════ */
 :root,[data-theme="dark"]{
@@ -68,7 +66,7 @@
 --on-accent:#120F0A;--on-ink:#EFE8DC;--on-ink-muted:rgba(239,232,220,.64);
 --card-shadow:0 30px 60px -30px rgba(0,0,0,.7);
 --success-bg:rgba(201,151,63,.08);--success-border:rgba(201,151,63,.35);--success-text:#E2C28A;
---serif:'Source Serif 4',Georgia,'Times New Roman',serif;--sans:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
+--serif:'Instrument Serif',Georgia,serif;--sans:'Hanken Grotesk',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
 --ease:cubic-bezier(.22,.8,.2,1);
 }
 [data-theme="light"]{
@@ -87,7 +85,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.05;mix-blend-mode:overlay;
 background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 ::selection{background:var(--accent);color:var(--on-accent)}
-h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.015em}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.04;letter-spacing:-.01em}
 h1 em,h2 em{font-style:italic;color:var(--gold)}
 a{color:inherit;text-decoration:none}
 button{font-family:var(--sans);cursor:pointer;color:inherit}
@@ -143,7 +141,7 @@ p{max-width:68ch}
 /* NAVBAR */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:200;height:76px;display:flex;align-items:center;transition:background .4s,height .4s var(--ease),border-color .4s;border-bottom:1px solid transparent}
 #navbar.scrolled,body:not(.on-home) #navbar{background:var(--navbar-bg);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px);border-color:var(--border);height:64px}
-[data-theme="dark"] body.on-home #navbar:not(.scrolled){--text:#EFE8DC;--text-muted:rgba(239,232,220,.7);--border-mid:rgba(239,232,220,.22)}
+body.on-home #navbar:not(.scrolled){--text:#EFE8DC;--text-muted:rgba(239,232,220,.7);--border-mid:rgba(239,232,220,.22)}
 .nav-inner{display:flex;align-items:center;gap:1.5rem;width:100%}
 .nav-logo{display:flex;align-items:center;gap:.8rem;background:none;border:none;padding:0;min-height:44px;color:var(--text)}
 .nav-logo-mark{font-family:var(--serif);font-size:1.75rem;color:var(--text);letter-spacing:-.01em;position:relative;padding-left:1.4rem}
@@ -176,7 +174,6 @@ p{max-width:68ch}
 .mobile-nav-link{text-align:left;background:none;border:none;border-bottom:1px solid var(--border);font-family:var(--serif);font-size:clamp(2rem,8vw,3rem);color:var(--text);padding:.5rem 0;transition:color .3s,padding .4s var(--ease)}
 .mobile-nav-link:hover{color:var(--gold);padding-left:.75rem}
 #mobile-menu .btn{margin-top:2rem}
-@media(max-width:1240px){.nav-controls>.btn{display:none}}
 @media(max-width:1080px){.nav-links{display:none}.hamburger{display:flex}.nav-controls{margin-left:auto}}
 @media(max-width:620px){.nav-controls>.btn,.nav-logo-sub,.nav-logo-divider{display:none}}
 
@@ -186,23 +183,14 @@ p{max-width:68ch}
 @keyframes pageIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 
 /* HERO */
-[data-theme="light"]{--hero-bg:#F4EFE6;--on-ink:#17140F;--on-ink-muted:rgba(23,20,15,.7)}
-[data-theme="light"] .hero::after{background:linear-gradient(90deg,var(--hero-bg) 26%,rgba(244,239,230,.7) 58%,rgba(244,239,230,.25))!important}
-[data-theme="light"] .hero-form-card{background:rgba(255,252,246,.86);border-color:rgba(143,95,28,.25);box-shadow:0 40px 80px -40px rgba(60,40,10,.35);--text:#17140F;--text-muted:rgba(23,20,15,.66);--text-dim:rgba(23,20,15,.5);--border-mid:rgba(23,20,15,.25);--input-text:#17140F}
-@media(max-width:960px){[data-theme="light"] .hero::after{background:linear-gradient(180deg,rgba(244,239,230,.4),var(--hero-bg) 70%)!important}}
 .hero{position:relative;min-height:100vh;min-height:100svh;background:var(--hero-bg);color:var(--on-ink);overflow:hidden;display:flex;align-items:center;padding:8rem 0 5rem}
 .hero-art{position:absolute;inset:0;pointer-events:none}
 .hero-art svg{position:absolute;right:-6%;top:50%;width:min(980px,85vw);height:auto;transform:translateY(-50%);opacity:.95}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--hero-bg) 22%,rgba(10,9,7,.55) 58%,rgba(10,9,7,.15));pointer-events:none}
 .hero-content{position:relative;z-index:2;width:100%}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(340px,.8fr);gap:clamp(2rem,5vw,5rem);align-items:center}
-.hero-grid>*{min-width:0}
-.hero-form-card{width:100%;max-width:460px;justify-self:end}
-@media(max-width:1180px) and (min-width:961px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(320px,400px)}.hero h1{font-size:clamp(2.3rem,4.4vw,3.6rem)}}
-@media(max-width:960px){.hero-form-card{max-width:560px;justify-self:stretch;margin-top:1rem}}
-@media(max-width:480px){.hero-form-card{padding:1.4rem}}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,5vw,5rem);align-items:end}
 .hero-tag{color:var(--gold)}
-.hero h1{font-size:clamp(2.3rem,4.6vw,4.3rem);color:var(--on-ink);max-width:16ch;margin-bottom:1.75rem}
+.hero h1{font-size:clamp(2.6rem,5.4vw,5.1rem);color:var(--on-ink);max-width:16ch;margin-bottom:1.75rem}
 .hero h1 .w{display:inline-block;opacity:0;transform:translateY(.6em) rotate(2deg);filter:blur(6px);animation:wordIn 1.1s var(--ease) forwards}
 @keyframes wordIn{to{opacity:1;transform:none;filter:none}}
 .hero p{color:var(--on-ink-muted);font-size:1.06rem;max-width:52ch;margin-bottom:2.5rem}
@@ -362,10 +350,14 @@ footer .container{position:relative}
 .rv.in{opacity:1;transform:none}
 
 /* CURSOR LENS */
-@media(hover:none){
+.lens{position:fixed;top:0;left:0;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--gold);pointer-events:none;z-index:1000;mix-blend-mode:difference;transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease);opacity:0}
+.lens.big{width:54px;height:54px;margin:-27px 0 0 -27px}
+@media(hover:none){.lens{display:none}}
+
 @media(prefers-reduced-motion:reduce){
 *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .rv{opacity:1;transform:none}.hero h1 .w{opacity:1;transform:none;filter:none}
+.lens{display:none}
 }
 
 </style>
@@ -1107,15 +1099,10 @@ footer .container{position:relative}
   <div class="page-header"><div class="container"><h1 data-i18n="imprint_title">Legal Notice / Impressum</h1></div></div>
   <section class="section section-alt"><div class="container"><div class="prose">
     <h2 data-i18n="imprint_h_company">Company Information</h2>
-    <p><strong>Finora Consulting SNC</strong><br/>
+    <p><strong>Finora – International Practice Group</strong><br/>
     Rue d'Ormône 97<br/>
     1965 Savièse, Switzerland<br/>
-    Legal form: General Partnership (SNC)<br/>
-    Seat: Savièse<br/>
-    Status: active<br/>
-    UID: <a href="https://www.uid.admin.ch/Detail.aspx?uid_id=CHE222837088" target="_blank" rel="noopener" style="color:var(--accent)">CHE-222.837.088</a><br/>
-    CH-ID: CH-626-2026046-6<br/>
-    FCRO-ID: 1728623</p>
+    <span data-i18n="imprint_reg">Register number:</span> CH-626.2.026.046-6</p>
 
     <h2 data-i18n="imprint_h_contact">Contact</h2>
     <p>Email: <a href="mailto:enquiries@finora.eu" style="color:var(--accent)">enquiries@finora.eu</a></p>
@@ -1142,7 +1129,7 @@ footer .container{position:relative}
   <div class="page-header"><div class="container"><h1 data-i18n="privacy_title">Privacy Policy / Datenschutzerklärung</h1></div></div>
   <section class="section section-alt"><div class="container"><div class="prose">
     <h2 data-i18n="priv_h1">1. Data Controller</h2>
-    <p><strong>Finora Consulting SNC</strong><br/>
+    <p><strong>Finora – International Practice Group</strong><br/>
     Rue d'Ormône 97, 1965 Savièse, Switzerland<br/>
     Email: <a href="mailto:enquiries@finora.eu" style="color:var(--accent)">enquiries@finora.eu</a></p>
 
@@ -1828,6 +1815,7 @@ if(window.innerWidth>960&&!window.matchMedia('(prefers-reduced-motion: reduce)')
 applyTranslations();
 </script>
 
+<div class="lens" id="lens" aria-hidden="true"></div>
 <script>
 /* ─── REDESIGN ENHANCEMENTS ─── */
 (function(){
@@ -1867,7 +1855,13 @@ applyTranslations();
   /* close menu on Escape */
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMobile();});
   if(reduce)return;
+  /* cursor lens */
+  var lens=document.getElementById('lens');
   if(window.matchMedia('(hover:hover)').matches){
+    var x=0,y=0,cx=0,cy=0;
+    window.addEventListener('mousemove',function(e){x=e.clientX;y=e.clientY;lens.style.opacity=1;});
+    document.addEventListener('mouseover',function(e){lens.classList.toggle('big',!!e.target.closest('button,a,.card-hover,input,select,textarea'));});
+    (function loop(){cx+=(x-cx)*.18;cy+=(y-cy)*.18;lens.style.transform='translate('+cx+'px,'+cy+'px)';requestAnimationFrame(loop);})();
     /* hero art tilt */
     var art=document.querySelector('.hero-art svg');
     var hero=document.querySelector('.hero');
@@ -1880,3 +1874,15 @@ applyTranslations();
 </script>
 </body>
 </html>
+
+# ADDITIONAL COMPANY INFORMATION (IF AVAILABLE):
+
+Company name: Finora
+address	Rue d'Ormône 97
+ZIP / Town	1965 Savièse
+legal form	General Partnership
+seat	Savièse
+status	active
+UID	CHE-222.837.088- Opens in a new tab.
+CH-ID	CH-626-2026046-6
+FCRO-ID	1728623
