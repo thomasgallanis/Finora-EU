@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
+<html lang="en" dir="ltr" data-theme="light">
   <link rel="icon" type="image/x-icon" href="/finora-favicon.ico">
 <!-- Meta Pixel Code -->
 <script>
@@ -30,20 +30,21 @@ src="https://www.facebook.com/tr?id=1710942227117231&ev=PageView&noscript=1"
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 
 <!-- SEO: Dynamic — updated by setLang() -->
-<title id="meta-title">Finora | الاستشارات العابرة للحدود والمسائل المالية الاستراتيجية</title>
-<meta id="meta-desc" name="description" content="شركة استشارات دولية مستقلة توفّر الوضوح والرؤية الاستراتيجية والخبرات المنسّقة العابرة للحدود لمعالجة المسائل المالية والقانونية والتجارية المعقدة."/>
+<title id="meta-title">Finora | Cross-Border Advisory & Strategic Financial Matters</title>
+<meta id="meta-desc" name="description" content="Independent international advisory firm providing clarity, strategy, and coordinated cross-border expertise for complex financial, legal, and commercial matters."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://finora.eu/"/>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://finora.eu/"/>
-<meta id="og-title" property="og:title" content="Finora | الاستشارات العابرة للحدود والمسائل المالية الاستراتيجية"/>
-<meta id="og-desc" property="og:description" content="شركة استشارات دولية مستقلة توفّر الوضوح والرؤية الاستراتيجية والخبرات المنسّقة العابرة للحدود لمعالجة المسائل المالية والقانونية والتجارية المعقدة."/>
+<meta id="og-title" property="og:title" content="Finora | Cross-Border Advisory & Strategic Financial Matters"/>
+<meta id="og-desc" property="og:description" content="Independent international advisory firm providing clarity, strategy, and coordinated cross-border expertise for complex financial, legal, and commercial matters."/>
 <meta property="og:site_name" content="Finora"/>
-<meta property="og:locale" content="ar_AE"/>
+<meta property="og:locale" content="en_GB"/>
 <meta property="og:locale:alternate" content="de_DE"/>
-<meta property="og:locale:alternate" content="en_GB"/>
+<meta property="og:locale:alternate" content="ar_AE"/>
+<meta property="og:locale:alternate" content="ja_JP"/>
 
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -65,14 +66,14 @@ src="https://www.facebook.com/tr?id=1710942227117231&ev=PageView&noscript=1"
   },
   "areaServed": "Worldwide",
   "serviceType": ["Cross-Border Advisory", "Financial Forensics", "International Litigation Coordination", "Digital Asset Tracing", "Regulatory Engagement"],
-  "knowsLanguage": ["ar", "en", "de"],
+  "knowsLanguage": ["en", "de", "ar", "ja"],
   "openingHours": "Mo-Fr 09:00-18:00"
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet"/>
 <meta name="theme-color" content="#F4EFE6"/>
 <style>
 /* ═══════════ FINORA — "Horizon" identity ═══════════ */
@@ -180,9 +181,11 @@ p{max-width:68ch}
 .theme-toggle-knob{width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:inset -5px -2px 0 0 var(--accent-dark);transition:transform .6s var(--ease),box-shadow .6s;display:block}
 [data-theme="light"] .theme-toggle-knob{box-shadow:inset 0 0 0 0 var(--accent-dark);transform:rotate(180deg)}
 .theme-toggle-icon{display:none}
-.lang-btn{background:none;border:none;padding:.3rem .35rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--text-dim);min-height:44px;transition:color .3s}
+.lang-btn{background:none;border:none;padding:.3rem .2rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--text-dim);min-height:44px;transition:color .3s;display:flex;align-items:center}
 .lang-btn:hover,.lang-btn.active{color:var(--text)}
-.lang-btn.active{text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--accent)}
+.lang-btn img{display:block;border-radius:2px;opacity:.55;transition:opacity .3s,transform .3s;box-shadow:0 0 0 1px var(--border-mid)}
+.lang-btn:hover img,.lang-btn.active img{opacity:1}
+.lang-btn.active img{box-shadow:0 0 0 1.5px var(--accent)}
 .hamburger{display:none;background:none;border:1px solid var(--border-mid);border-radius:999px;width:44px;height:44px;flex-direction:column;gap:6px;align-items:center;justify-content:center}
 .hamburger span{display:block;width:16px;height:1px;background:var(--text);transition:transform .4s var(--ease),opacity .3s}
 .hamburger span:nth-child(3){width:10px;margin-left:6px}
@@ -465,7 +468,6 @@ html[lang="de"] [data-legal-lang="de"],html[lang="en"] [data-legal-lang="en"]{di
 }
 
 /* ═══════════ ARABIC / RTL ═══════════ */
-.lang-btn-ar{font-family:'IBM Plex Sans Arabic',var(--sans);font-size:.88rem;letter-spacing:0;font-weight:500}
 [lang="ar"]{--serif:'Noto Naskh Arabic','IBM Plex Sans Arabic',Georgia,serif;--sans:'IBM Plex Sans Arabic','IBM Plex Sans',system-ui,sans-serif}
 [dir="rtl"] body{line-height:1.85}
 [dir="rtl"] *,[dir="rtl"] *::before,[dir="rtl"] *::after{letter-spacing:0!important}
@@ -523,10 +525,25 @@ html[lang="de"] [data-legal-lang="de"],html[lang="en"] [data-legal-lang="en"]{di
 /* legal pages: long Terms / Privacy texts exist in EN + DE only -> show EN (left-to-right) in Arabic mode */
 html[lang="ar"] [data-legal-lang="en"]{display:block;direction:ltr;text-align:left}
 html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:right}
+
+/* ═══════════ JAPANESE ═══════════ */
+[lang="ja"]{--serif:'Noto Serif JP','Source Serif 4',Georgia,serif;--sans:'Noto Sans JP','IBM Plex Sans',system-ui,sans-serif}
+[lang="ja"] body{line-height:1.85}
+[lang="ja"] *,[lang="ja"] *::before,[lang="ja"] *::after{letter-spacing:0!important}
+[lang="ja"] h1,[lang="ja"] h2,[lang="ja"] h3,[lang="ja"] h4{line-height:1.4;font-weight:500}
+[lang="ja"] .hero h1{max-width:20ch;font-size:2.1rem}
+[lang="ja"] .section-title{max-width:26ch}
+[lang="ja"] .page-header h1{max-width:20ch}
+[lang="ja"] .section-tag,[lang="ja"] .form-group label,[lang="ja"] .pf-node,[lang="ja"] .chip,[lang="ja"] .footer-col-title,[lang="ja"] .differentiator-card-title,[lang="ja"] .hero-scroll{text-transform:none}
+[lang="ja"] h1 em,[lang="ja"] h2 em,[lang="ja"] .stat-value{font-style:normal}
+[lang="ja"] .nav-link{font-size:.88rem}
+@media(max-width:700px){[lang="ja"] .hero h1{font-size:1.6rem}}
+/* legal long texts exist in EN + DE only -> show EN in Japanese mode */
+html[lang="ja"] [data-legal-lang="en"]{display:block}
+html[lang="ja"] [data-legal-lang="en"] [data-i18n]{display:block}
 </style>
 </head>
 <body>
-
 <!-- ════════════════════════════════════
      NAVBAR
 ════════════════════════════════════ -->
@@ -539,21 +556,22 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
         <span class="nav-logo-sub" id="nav-sub">Cross-Border<br>Advisory</span>
       </button>
       <div class="nav-links">
-        <button class="nav-link" id="nl-about"    onclick="showPage('about')"    data-i18n="nav_about">Über uns</button>
-        <button class="nav-link" id="nl-services" onclick="showPage('services')" data-i18n="nav_services">Praxisbereiche</button>
-        <button class="nav-link" id="nl-process"  onclick="showPage('process')"  data-i18n="nav_process">Strategie &amp; Prozess</button>
-        <button class="nav-link" id="nl-faq"      onclick="showPage('faq')"      data-i18n="nav_faq">FAQ</button>
-        <button class="nav-link" id="nl-contact"  onclick="showPage('contact')"  data-i18n="nav_contact">Kontakt</button>
+        <button class="nav-link" id="nl-about"    onclick="showPage('about')"    data-i18n="nav_about">About</button>
+        <button class="nav-link" id="nl-services" onclick="showPage('services')" data-i18n="nav_services">Practice Areas</button>
+        <button class="nav-link" id="nl-process"  onclick="showPage('process')"  data-i18n="nav_process">Strategy &amp; Process</button>
+        <button class="nav-link" id="nl-faq"      onclick="showPage('faq')"      data-i18n="nav_faq">Insights &amp; FAQ</button>
+        <button class="nav-link" id="nl-contact"  onclick="showPage('contact')"  data-i18n="nav_contact">Contact</button>
       </div>
       <div class="nav-controls">
         <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
           <span class="theme-toggle-knob"><span class="theme-toggle-icon" id="theme-icon">🌙</span></span>
         </button>
-        <button class="lang-btn" id="btn-de" onclick="setLang('de')">DE</button>
-        <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
-        <button class="lang-btn lang-btn-ar active" id="btn-ar" onclick="setLang('ar')" lang="ar">عربي</button>
-        <button class="btn btn-accent btn-sm" onclick="showPage('contact')" data-i18n="nav_cta">Konsultation anfragen</button>
-        <button class="hamburger" onclick="toggleMobile()" aria-label="Menü öffnen" aria-expanded="false" id="hamburger-btn">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')" aria-label="English" title="English"><img src="https://flagcdn.com/w40/gb.png" width="22" height="16" alt="EN"></button>
+        <button class="lang-btn" id="btn-de" onclick="setLang('de')" aria-label="Deutsch" title="Deutsch"><img src="https://flagcdn.com/w40/de.png" width="22" height="16" alt="DE"></button>
+        <button class="lang-btn" id="btn-ar" onclick="setLang('ar')" aria-label="العربية" title="العربية" lang="ar"><img src="https://flagcdn.com/w40/sa.png" width="22" height="16" alt="AR"></button>
+        <button class="lang-btn" id="btn-ja" onclick="setLang('ja')" aria-label="日本語" title="日本語" lang="ja"><img src="https://flagcdn.com/w40/jp.png" width="22" height="16" alt="JA"></button>
+        <button class="btn btn-accent btn-sm" onclick="showPage('contact')" data-i18n="nav_cta">Request Advisory Consultation</button>
+        <button class="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-expanded="false" id="hamburger-btn">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -562,13 +580,13 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
 </nav>
 
 <div id="mobile-menu" role="navigation" aria-label="Mobile navigation">
-  <button class="mobile-nav-link" onclick="showPage('home');closeMobile()"     data-i18n="nav_home">Startseite</button>
-  <button class="mobile-nav-link" onclick="showPage('about');closeMobile()"    data-i18n="nav_about">Über uns</button>
-  <button class="mobile-nav-link" onclick="showPage('services');closeMobile()" data-i18n="nav_services">Praxisbereiche</button>
-  <button class="mobile-nav-link" onclick="showPage('process');closeMobile()"  data-i18n="nav_process">Strategie &amp; Prozess</button>
-  <button class="mobile-nav-link" onclick="showPage('faq');closeMobile()"      data-i18n="nav_faq">FAQ</button>
-  <button class="mobile-nav-link" onclick="showPage('contact');closeMobile()"  data-i18n="nav_contact">Kontakt</button>
-  <button class="btn btn-accent btn-full" onclick="showPage('contact');closeMobile()" data-i18n="nav_cta">Konsultation anfragen</button>
+  <button class="mobile-nav-link" onclick="showPage('home');closeMobile()"     data-i18n="nav_home">Home</button>
+  <button class="mobile-nav-link" onclick="showPage('about');closeMobile()"    data-i18n="nav_about">About</button>
+  <button class="mobile-nav-link" onclick="showPage('services');closeMobile()" data-i18n="nav_services">Practice Areas</button>
+  <button class="mobile-nav-link" onclick="showPage('process');closeMobile()"  data-i18n="nav_process">Strategy &amp; Process</button>
+  <button class="mobile-nav-link" onclick="showPage('faq');closeMobile()"      data-i18n="nav_faq">Insights &amp; FAQ</button>
+  <button class="mobile-nav-link" onclick="showPage('contact');closeMobile()"  data-i18n="nav_contact">Contact</button>
+  <button class="btn btn-accent btn-full" onclick="showPage('contact');closeMobile()" data-i18n="nav_cta">Request Advisory Consultation</button>
 </div>
 
 <!-- ════════════════════════════════════
@@ -637,24 +655,24 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
     <div class="container hero-content">
       <div class="hero-grid">
         <div>
-          <span class="section-tag hero-tag" data-i18n="hero_tag">Unabhängige Grenzüberschreitende Strategieberatung</span>
-          <h1 id="hero-headline" data-i18n="hero_title">Strategische Orientierung in komplexen internationalen Finanz-, Rechts- und Wirtschaftsfragen.</h1>
-          <p data-i18n="hero_sub">Finora unterstützt Unternehmensführungen, institutionelle Investoren und Chefsyndikate mit der nötigen Klarheit, Diskretion und koordinierten Expertise, um anspruchsvolle grenzüberschreitende Herausforderungen souverän zu steuern.</p>
+          <span class="section-tag hero-tag" data-i18n="hero_tag">Independent Cross-Border Advisory</span>
+          <h1 id="hero-headline" data-i18n="hero_title">Navigating Complex Financial, Legal, and Commercial Matters Across Borders.</h1>
+          <p data-i18n="hero_sub">Finora provides executive leadership, institutional investors, and legal counsel with the strategic clarity, discretion, and coordinated expertise required to resolve high-value international challenges.</p>
           <div class="hero-btns">
-            <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="hero_cta">Beratungssitzung anfragen</button>
-            <button class="btn btn-ink" onclick="showPage('services')" data-i18n="hero_secondary">Praxisbereiche entdecken</button>
+            <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="hero_cta">Request Advisory Consultation</button>
+            <button class="btn btn-ink" onclick="showPage('services')" data-i18n="hero_secondary">View Practice Areas</button>
           </div>
         </div>
 
         <!-- Hero intake form — on mobile, order:-1 moves it above text -->
         <div class="hero-form-card">
-          <div class="hero-form-title" data-i18n="quick_form_title">Beratungssitzung anfragen</div>
-          <div class="hero-form-sub"   data-i18n="quick_form_sub">Alle Anfragen werden direkt von unserem Beraterteam entgegengenommen und streng vertraulich behandelt.</div>
+          <div class="hero-form-title" data-i18n="quick_form_title">Request Advisory Consultation</div>
+          <div class="hero-form-sub"   data-i18n="quick_form_sub">All communications are received directly by our senior advisory team and handled with strict professional confidentiality.</div>
           <div id="quick-success" class="hidden" style="text-align:center;padding:1.5rem 0">
             <svg width="42" height="42" viewBox="0 0 24 24" fill="none" style="stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto .75rem"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-            <div style="font-family:var(--serif);font-size:1rem;color:var(--on-ink);font-weight:700;margin-bottom:.4rem" data-i18n="quick_success_title">Anfrage eingegangen</div>
-            <div style="font-size:.8rem;color:var(--on-ink-muted)" data-i18n="quick_success_text">Unser Beraterteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.</div>
-            <button class="btn btn-sm btn-ink" onclick="resetQuickForm()" style="margin-top:1rem" data-i18n="quick_reset">Neue Anfrage</button>
+            <div style="font-family:var(--serif);font-size:1rem;color:var(--on-ink);font-weight:700;margin-bottom:.4rem" data-i18n="quick_success_title">Request Received</div>
+            <div style="font-size:.8rem;color:var(--on-ink-muted)" data-i18n="quick_success_text">Our senior advisory team will review your request and contact you shortly.</div>
+            <button class="btn btn-sm btn-ink" onclick="resetQuickForm()" style="margin-top:1rem" data-i18n="quick_reset">New Request</button>
           </div>
           <form
             id="quick-form"
@@ -664,16 +682,16 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
             <input type="hidden" name="_subject" value="New Advisory Consultation Request - Finora">
             <input type="hidden" name="_replyto" value="">
             <div class="form-row">
-              <div class="form-group"><label data-i18n="quick_firstname">Vorname *</label><input type="text" id="qf-first" name="first_name" required autocomplete="given-name"/></div>
-              <div class="form-group"><label data-i18n="quick_lastname">Nachname *</label><input type="text" id="qf-last" name="last_name" required autocomplete="family-name"/></div>
+              <div class="form-group"><label data-i18n="quick_firstname">First Name *</label><input type="text" id="qf-first" name="first_name" required autocomplete="given-name"/></div>
+              <div class="form-group"><label data-i18n="quick_lastname">Last Name *</label><input type="text" id="qf-last" name="last_name" required autocomplete="family-name"/></div>
             </div>
-            <div class="form-group"><label data-i18n="quick_email">E-Mail-Adresse *</label><input type="email" id="qf-email" name="email" required autocomplete="email"/></div>
-            <div class="form-group"><label data-i18n="quick_org">Organisation / Kanzlei *</label><input type="text" id="qf-org" name="organization" required/></div>
+            <div class="form-group"><label data-i18n="quick_email">Corporate Email Address *</label><input type="email" id="qf-email" name="email" required autocomplete="email"/></div>
+            <div class="form-group"><label data-i18n="quick_org">Organisation / Firm Name *</label><input type="text" id="qf-org" name="organization" required/></div>
             <button type="submit" class="btn btn-accent btn-full" id="qf-submit">
-              <span data-i18n="quick_submit">Anfrage einreichen</span>
+              <span data-i18n="quick_submit">Submit Request</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </button>
-            <div style="font-size:.72rem;color:rgba(239,232,220,.4);text-align:center;margin-top:.7rem" data-i18n="quick_disclaimer">Professionelle Vertraulichkeit · Absolute Diskretion · DSGVO</div>
+            <div style="font-size:.72rem;color:rgba(239,232,220,.4);text-align:center;margin-top:.7rem" data-i18n="quick_disclaimer">Professional Confidentiality · Absolute Discretion · GDPR</div>
           </form>
         </div>
       </div>
@@ -685,20 +703,20 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
     <div class="container">
       <div class="grid-4">
         <div class="stat-item">
-          <div class="stat-value" data-i18n="stat_v1">Koordiniert</div>
-          <div class="stat-label" data-i18n="stat_l1">Grenzüberschreitende Expertise</div>
+          <div class="stat-value" data-i18n="stat_v1">Coordinated</div>
+          <div class="stat-label" data-i18n="stat_l1">Cross-Border Expertise</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value" data-i18n="stat_v2">Kommerziell</div>
-          <div class="stat-label" data-i18n="stat_l2">Strategisches Denken</div>
+          <div class="stat-value" data-i18n="stat_v2">Commercial</div>
+          <div class="stat-label" data-i18n="stat_l2">Strategic Thinking</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value" data-i18n="stat_v3">Diskret</div>
-          <div class="stat-label" data-i18n="stat_l3">Absolute Vertraulichkeit</div>
+          <div class="stat-value" data-i18n="stat_v3">Discreet</div>
+          <div class="stat-label" data-i18n="stat_l3">Absolute Confidentiality</div>
         </div>
         <div class="stat-item">
-          <div class="stat-value" data-i18n="stat_v4">Entschlossen</div>
-          <div class="stat-label" data-i18n="stat_l4">Klare Handlungsoptionen</div>
+          <div class="stat-value" data-i18n="stat_v4">Decisive</div>
+          <div class="stat-label" data-i18n="stat_l4">Actionable Pathways</div>
         </div>
       </div>
     </div>
@@ -709,22 +727,22 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
     <div class="container">
       <div class="grid-2" style="align-items:center">
         <div>
-          <span class="section-tag" data-i18n="inst_tag">Strategische Positionierung</span>
+          <span class="section-tag" data-i18n="inst_tag">Strategic Positioning</span>
           <span class="accent-rule"></span>
-          <h2 class="section-title" data-i18n="inst_title">Strategische Klarheit an den Schnittstellen von Kapital, Recht und Jurisdiktionen.</h2>
-          <p style="color:var(--text-muted);line-height:1.8;margin-top:1rem" data-i18n="inst_body1">Komplexe internationale Sachverhalte lassen sich selten auf eine einzelne Rechtsordnung oder traditionelle Fachdisziplinen reduzieren. Wenn grenzüberschreitende Finanzrisiken, komplexe Unternehmensstrukturen oder internationale Streitigkeiten zu strategischem Stillstand führen, reicht isolierte Beratung nicht aus. Es bedarf einer übergeordneten Strategie.</p>
-          <p style="color:var(--text-muted);line-height:1.8;margin-top:.85rem" data-i18n="inst_body2">Finora agiert als unabhängige internationale Beratungspraxis. Wir verbinden unternehmerisches Denken, forensische Präzision und juristische Koordination, um Entscheidungsträgern, Family Offices und Institutionen in komplexen internationalen Lagen die volle Handlungsfähigkeit zurückzugeben.</p>
+          <h2 class="section-title" data-i18n="inst_title">Strategic Clarity Where Jurisdictions, Capital, and Law Intersect.</h2>
+          <p style="color:var(--text-muted);line-height:1.8;margin-top:1rem" data-i18n="inst_body1">Complex international matters rarely conform to single jurisdictions or traditional professional siloes. When financial exposures, cross-border disputes, or multi-jurisdictional asset structures create operational or legal gridlock, organisations require more than reactive advice — they require overarching strategy.</p>
+          <p style="color:var(--text-muted);line-height:1.8;margin-top:.85rem" data-i18n="inst_body2">Finora operates as an independent international cross-border advisory firm. We combine commercial acumen, forensic discipline, and legal alignment to help leadership teams, family offices, and institutions regain control over complex international scenarios.</p>
         </div>
         <div class="gap-col">
           <div class="differentiator-card">
-            <blockquote data-i18n="inst_d1_q">"Wir sind weder Bank, noch Kreditinstitut, noch Kanzlei. Finora ist eine unabhängige grenzüberschreitende Beratungspraxis. Wir vermitteln Gewissheit, Klarheit und praxistaugliche Lösungswege."</blockquote>
-            <div class="differentiator-card-title" data-i18n="inst_d1_t">Unabhängige Beratung</div>
-            <div class="differentiator-card-sub" data-i18n="inst_d1_s">Keine institutionellen Interessenkonflikte · Rein mandantenorientiert</div>
+            <blockquote data-i18n="inst_d1_q">"We are not a bank, a lender, a law firm, or a software vendor. We are independent cross-border advisers. We sell confidence, clarity, and practical solutions."</blockquote>
+            <div class="differentiator-card-title" data-i18n="inst_d1_t">Independent Advisory</div>
+            <div class="differentiator-card-sub" data-i18n="inst_d1_s">Free from institutional conflicts · Purely client-focused</div>
           </div>
           <div class="differentiator-card">
-            <blockquote data-i18n="inst_d2_q">"Unsere Bewertungen priorisieren rechtliche Durchsetzbarkeit, finanzielle Realisierbarkeit und nachhaltige wirtschaftliche Ergebnisse — nicht abstrakte Rechtstheorie."</blockquote>
-            <div class="differentiator-card-title" data-i18n="inst_d2_t">Kommerzielles Denken</div>
-            <div class="differentiator-card-sub" data-i18n="inst_d2_s">Wirtschaftliche Ziele · Praktische Lösungen · Durchsetzbare Ergebnisse</div>
+            <blockquote data-i18n="inst_d2_q">"Our assessments prioritise legal viability, financial execution, and long-term commercial impact over abstract legal theory."</blockquote>
+            <div class="differentiator-card-title" data-i18n="inst_d2_t">Commercial Thinking</div>
+            <div class="differentiator-card-sub" data-i18n="inst_d2_s">Commercial objectives · Practical solutions · Enforceable outcomes</div>
           </div>
         </div>
       </div>
@@ -735,46 +753,46 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   <section class="section section-light" aria-labelledby="services-heading">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="section-tag" data-i18n="services_tag">Strategische Kompetenzfelder</span>
+        <span class="section-tag" data-i18n="services_tag">Strategic Capabilities</span>
         <span class="accent-rule" style="margin:0 auto .8rem"></span>
-        <h2 class="section-title" id="services-heading" data-i18n="services_title">Koordinierte Expertise für anspruchsvolle internationale Herausforderungen.</h2>
+        <h2 class="section-title" id="services-heading" data-i18n="services_title">Deploying coordinated expertise to solve high-stakes cross-border challenges.</h2>
       </div>
       <div class="grid-auto">
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
-          <h3 class="card-title" data-i18n="sv1_title">Grenzüberschreitende Finanzstreitigkeiten</h3>
-          <p class="card-text" data-i18n="sv1_text">Übergeordnete Strategieentwicklung bei internationalen Wirtschafts- und Finanzkonflikten.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv1_title">Cross-Border Financial Disputes</h3>
+          <p class="card-text" data-i18n="sv1_text">Multi-jurisdictional strategy and alignment for complex commercial conflicts and institutional exposures.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-          <h3 class="card-title" data-i18n="sv2_title">Verfolgung Digitaler Vermögenswerte</h3>
-          <p class="card-text" data-i18n="sv2_text">Unabhängige forensische Rekonstruktion komplexer Blockchain-Transaktionen und verdeckter Strukturen.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv2_title">Digital Asset Tracing &amp; On-Chain Analysis</h3>
+          <p class="card-text" data-i18n="sv2_text">Independent forensic examination of complex blockchain transactions and distributed ledger structures.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-          <h3 class="card-title" data-i18n="sv3_title">Gerichtliche Offenlegungsstrategien</h3>
-          <p class="card-text" data-i18n="sv3_text">Entwicklung strategischer Rahmenkonzepte zur Beschaffung kritischer Finanzinformationen auf internationalem Rechtsweg.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv3_title">Court-Directed Disclosure Strategies</h3>
+          <p class="card-text" data-i18n="sv3_text">Preparing strategic frameworks to secure financial information across international legal channels.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-          <h3 class="card-title" data-i18n="sv4_title">Forensische Finanzanalyse</h3>
-          <p class="card-text" data-i18n="sv4_text">Minutiöse Rekonstruktion internationaler Zahlungsströme als Entscheidungsgrundlage für Führungsgremien.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv4_title">Financial Forensic Analysis</h3>
+          <p class="card-text" data-i18n="sv4_text">Rigorous transaction reconstruction to support institutional decision-making and international litigation.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3 class="card-title" data-i18n="sv5_title">Internationales Litigationsmanagement</h3>
-          <p class="card-text" data-i18n="sv5_text">Strategische Steuerung lokaler Kanzleien und Fachexperten zur Wahrung einer konsistenten Gesamtausrichtung.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv5_title">International Litigation Coordination</h3>
+          <p class="card-text" data-i18n="sv5_text">Directing foreign counsel and technical experts to maintain strategic consistency across multiple jurisdictions.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
         <div class="card card-hover" onclick="showPage('services')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-          <h3 class="card-title" data-i18n="sv6_title">Regulatorische Koordination &amp; Strategie</h3>
-          <p class="card-text" data-i18n="sv6_text">Strukturierte Kommunikation und Verfahrenssteuerung im Austausch mit internationalen Behörden und Regulatoren.</p>
-          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Mehr erfahren →</button>
+          <h3 class="card-title" data-i18n="sv6_title">Regulatory Engagement &amp; Strategy</h3>
+          <p class="card-text" data-i18n="sv6_text">Structured communication and procedural navigation alongside international authorities and enforcement bodies.</p>
+          <button class="btn btn-ghost btn-sm mt-3" onclick="showPage('services')" data-i18n="sv_learn">Learn More →</button>
         </div>
       </div>
     </div>
@@ -784,35 +802,35 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   <section class="section section-alt">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="section-tag" data-i18n="eng_tag">Das Beratungsmodell</span>
+        <span class="section-tag" data-i18n="eng_tag">The Engagement Framework</span>
         <span class="accent-rule" style="margin:0 auto .8rem"></span>
-        <h2 class="section-title" data-i18n="eng_title">Ein strukturierter Pfad zu strategischer Kontrolle</h2>
+        <h2 class="section-title" data-i18n="eng_title">A Structured Pathway to Strategic Control</h2>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:2.5rem">
         <div class="process-step">
           <div class="process-num">1</div>
           <div>
-            <div class="process-title" data-i18n="eng_s1_t">Vertrauliche Erstanalyse</div>
-            <p class="process-text" data-i18n="eng_s1_d">Unmittelbare Bewertung der internationalen Exposition, Dokumentenlage und relevanten Jurisdiktionen.</p>
+            <div class="process-title" data-i18n="eng_s1_t">Confidential Review</div>
+            <p class="process-text" data-i18n="eng_s1_d">Immediate assessment of international exposures, documentation, and jurisdictional touchpoints.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">2</div>
           <div>
-            <div class="process-title" data-i18n="eng_s2_t">Strategischer Blueprint</div>
-            <p class="process-text" data-i18n="eng_s2_d">Ausarbeitung eines abgestimmten, grenzüberschreitenden Lösungsansatzes unter Berücksichtigung wirtschaftlicher Ziele.</p>
+            <div class="process-title" data-i18n="eng_s2_t">Strategic Blueprint</div>
+            <p class="process-text" data-i18n="eng_s2_d">Formulation of a coordinated, cross-border approach prioritising commercial objectives.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">3</div>
           <div>
-            <div class="process-title" data-i18n="eng_s3_t">Koordinierte Umsetzung</div>
-            <p class="process-text" data-i18n="eng_s3_d">Steuerung multidisziplinärer Teams, lokaler Rechtsanwälte und Fachexperten in allen relevanten Zielmärkten.</p>
+            <div class="process-title" data-i18n="eng_s3_t">Coordinated Execution</div>
+            <p class="process-text" data-i18n="eng_s3_d">Directing multidisciplinary teams, local counsel, and specialists across all relevant regions.</p>
           </div>
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-ghost" onclick="showPage('process')" data-i18n="eng_more">Vollständige Methodik ansehen →</button>
+        <button class="btn btn-ghost" onclick="showPage('process')" data-i18n="eng_more">View Full Methodology →</button>
       </div>
     </div>
   </section>
@@ -820,10 +838,10 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   <!-- CTA Band -->
   <section class="cta-band">
     <div class="container">
-      <span style="display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem" data-i18n="cta_tag">Vertrauliche Erstberatung</span>
-      <h2 data-i18n="cta_title">Stehen Sie vor einer komplexen internationalen Herausforderung?</h2>
-      <p data-i18n="cta_sub">Sprechen Sie direkt mit unseren erfahrenen Beratern, um Klarheit zu gewinnen, Handlungsszenarien zu bewerten und die optimale Strategie zu definieren.</p>
-      <button class="btn btn-bone" onclick="showPage('contact')" data-i18n="cta_btn">Beratungssitzung anfragen</button>
+      <span style="display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem" data-i18n="cta_tag">Confidential Advisory Consultation</span>
+      <h2 data-i18n="cta_title">Facing a Complex Multi-Jurisdictional Challenge?</h2>
+      <p data-i18n="cta_sub">Speak directly with our senior advisory team to establish clarity, assess strategic options, and determine the optimal pathway forward.</p>
+      <button class="btn btn-bone" onclick="showPage('contact')" data-i18n="cta_btn">Request Advisory Consultation</button>
     </div>
   </section>
 
@@ -835,8 +853,8 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
 <div class="page" id="page-about">
   <div class="page-header">
     <div class="container">
-      <span class="section-tag" data-i18n="about_tag">Kanzleiprofil</span>
-      <h1 data-i18n="about_title">Unabhängige Strategieberatung für eine vernetzte globale Wirtschaft.</h1>
+      <span class="section-tag" data-i18n="about_tag">Institutional Profile</span>
+      <h1 data-i18n="about_title">Independent Strategic Advisory for an Interconnected Global Economy.</h1>
     </div>
   </div>
 
@@ -846,60 +864,60 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
       <div class="grid-2 mb-4">
         <div>
           <span class="accent-rule"></span>
-          <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif)" data-i18n="about_ph_title">Klarheit schaffen, wo Komplexität Handlungsfähigkeit blockiert.</h2>
-          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:.85rem" data-i18n="about_ph_body1">Finora wurde gegründet, um eine strukturelle Lücke in der internationalen Wirtschaftsberatung zu schließen: die Diskrepanz zwischen lokaler juristischer Abwicklung und übergeordneter kommerzieller Strategie.</p>
-          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:.85rem" data-i18n="about_ph_body2">Wenn internationale Finanzkonflikte oder Vermögenswerte mehrere Länder betreffen, stehen Unternehmen oft vor der Herausforderung, isolierte Anwaltsteams, widersprüchliche lokale Ratschläge und fragmentierte Finanzdaten synchronisieren zu müssen. Finora bildet die zentrale strategische Instanz, die diese Stränge zusammenführt.</p>
-          <p style="color:var(--text-muted);line-height:1.8" data-i18n="about_ph_body3">Wir sind weder Bank noch Kreditinstitut, weder Softwarehersteller noch klassische Anwaltskanzlei. Finora ist eine unabhängige grenzüberschreitende Beratungspraxis. Wir vermitteln Gewissheit, Klarheit und praxistaugliche Lösungswege.</p>
+          <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif)" data-i18n="about_ph_title">Restoring Clarity to Cross-Border Complexity.</h2>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:.85rem" data-i18n="about_ph_body1">Finora was established to address a persistent challenge in international commerce: the gap between localised legal execution and overarching commercial strategy.</p>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:.85rem" data-i18n="about_ph_body2">When high-value financial disputes or asset exposures span multiple countries, corporate entities often find themselves managing disconnected legal teams, conflicting local advice, and fragmented forensic data. Finora provides the central strategic intelligence required to harmonise these efforts.</p>
+          <p style="color:var(--text-muted);line-height:1.8" data-i18n="about_ph_body3">We are not a bank, a lender, a law firm, or a software vendor. We are independent cross-border advisers. We sell confidence, clarity, and practical solutions. Our role is to analyse complex international positions, synthesise forensic and legal realities, and orchestrate the precise strategy needed to achieve a commercial resolution.</p>
         </div>
         <div>
           <span class="accent-rule"></span>
-          <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif)" data-i18n="about_client_title">Mandantenstruktur</h2>
-          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1rem" data-i18n="about_client_intro">Finora berät ausschließlich Entscheidungsträger, institutionelle Akteure und professionelle Berater.</p>
+          <h2 style="font-size:1.5rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif)" data-i18n="about_client_title">Target Client Profiles</h2>
+          <p style="color:var(--text-muted);line-height:1.8;margin-bottom:1rem" data-i18n="about_client_intro">Finora acts exclusively as trusted adviser to executive leadership, institutional stakeholders, and professional counsel.</p>
           <div style="display:flex;flex-direction:column;gap:.75rem">
-            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c1">Geschäftsführer &amp; Unternehmenseigentümer bei internationalen Finanzstreitigkeiten</span></div>
-            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c2">Family Offices &amp; Investor-Gruppen zur Absicherung grenzüberschreitender Vermögenspositionen</span></div>
-            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c3">General Counsels &amp; Unternehmensjuristen bei vielschichtigen Litigations-Szenarien</span></div>
-            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c4">Insolvenzverwalter &amp; Restrukturierungsexperten bei grenzüberschreitenden Mandaten</span></div>
+            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c1">CEOs &amp; Business Owners navigating cross-border commercial friction or asset recovery scenarios</span></div>
+            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c2">Institutional Investors &amp; Family Offices requiring strategic oversight of international portfolio exposures</span></div>
+            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c3">General Counsel &amp; Legal Teams seeking external coordination for multi-jurisdictional litigation</span></div>
+            <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_c4">Insolvency Practitioners &amp; Advisers managing cross-border restructuring and asset tracing</span></div>
           </div>
         </div>
       </div>
 
       <!-- Core Operating Principles -->
-      <h2 class="section-title mb-3" data-i18n="about_values">Unsere Grundsätze</h2>
+      <h2 class="section-title mb-3" data-i18n="about_values">Core Operating Principles</h2>
       <div class="grid-4 mb-4">
         <div class="value-card">
           <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
-          <h3 class="value-title" data-i18n="about_v1">Unabhängigkeit</h3>
-          <p class="value-text" data-i18n="about_v1t">Frei von institutionalisierten Interessenkonflikten orientiert sich unsere Beratung ausschließlich an den strategischen Zielen unserer Mandanten.</p>
+          <h3 class="value-title" data-i18n="about_v1">Independence</h3>
+          <p class="value-text" data-i18n="about_v1t">Free from institutional conflicts of interest, our advice is guided solely by our clients' strategic and commercial priorities.</p>
         </div>
         <div class="value-card">
           <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-          <h3 class="value-title" data-i18n="about_v2">Analytische Tiefe</h3>
-          <p class="value-text" data-i18n="about_v2t">Jede Empfehlung basiert auf verifizierten forensischen Daten, sorgfältiger Dokumentenanalyse und einer realistischen Einschätzung internationaler Durchsetzbarkeit.</p>
+          <h3 class="value-title" data-i18n="about_v2">Intellectual Rigour</h3>
+          <p class="value-text" data-i18n="about_v2t">Every recommendation is grounded in verified forensic data, meticulous documentation, and realistic assessments of cross-border enforceability.</p>
         </div>
         <div class="value-card">
           <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
-          <h3 class="value-title" data-i18n="about_v3">Absolute Diskretion</h3>
-          <p class="value-text" data-i18n="about_v3t">Wir arbeiten nach höchsten Vertraulichkeitsstandards zum Schutz der Reputations- und Finanzinteressen unserer Mandanten.</p>
+          <h3 class="value-title" data-i18n="about_v3">Institutional Discretion</h3>
+          <p class="value-text" data-i18n="about_v3t">We operate with total confidentiality, protecting our clients' reputational and financial standing across all proceedings.</p>
         </div>
         <div class="value-card">
           <div class="value-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-          <h3 class="value-title" data-i18n="about_v4">Unternehmerischer Pragmatismus</h3>
-          <p class="value-text" data-i18n="about_v4t">Unser Erfolg bemisst sich nicht an langwierigen Prozessen, sondern am wirtschaftlich effizienten Abschluss grenzüberschreitender Mandate.</p>
+          <h3 class="value-title" data-i18n="about_v4">Commercial Pragmatism</h3>
+          <p class="value-text" data-i18n="about_v4t">We measure success not by prolonged process, but by the practical, economic resolution of multi-jurisdictional challenges.</p>
         </div>
       </div>
 
       <!-- Areas of expertise -->
-      <h2 class="section-title mb-3" data-i18n="about_expertise">Fachliche Kompetenzbereiche</h2>
+      <h2 class="section-title mb-3" data-i18n="about_expertise">Areas of Expertise</h2>
       <div class="grid-auto">
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e1">Grenzüberschreitende Finanzstreitigkeiten</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e2">Verfolgung Digitaler Vermögenswerte &amp; On-Chain-Analyse</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e3">Gerichtliche Offenlegungsstrategien &amp; Beweissicherung</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e4">Forensische Finanzanalyse &amp; Transaktionsrekonstruktion</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e5">Internationales Litigationsmanagement &amp; Koordination</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e6">Regulatorische Koordination &amp; Behördenkommunikation</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e7">Beweissicherung &amp; Datenmanagement</span></div>
-        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e8">Internationale Vollstreckungsplanung</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e1">Cross-Border Financial Disputes</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e2">Digital Asset Tracing &amp; On-Chain Analysis</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e3">Court-Directed Disclosure Strategies &amp; Evidence Preservation</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e4">Financial Forensic Analysis &amp; Transaction Reconstruction</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e5">International Litigation Coordination &amp; Management</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e6">Regulatory Engagement &amp; Authority Coordination</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e7">Evidence Preservation &amp; Data Management</span></div>
+        <div class="expertise-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="about_e8">International Enforcement Planning</span></div>
       </div>
     </div>
   </section>
@@ -911,9 +929,9 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
 <div class="page" id="page-services">
   <div class="page-header">
     <div class="container">
-      <span class="section-tag" data-i18n="svp_tag">Integrierte Beratungskompetenz</span>
-      <h1 data-i18n="svp_title">Ganzheitliche Lösungsansätze für internationale Herausforderungen.</h1>
-      <p data-i18n="svp_body">Finora verbindet finanzielle Analyse, grenzüberschreitende Strategieentwicklung und regulatorisches Fachwissen zu maßgeschneiderten Handlungsrahmen.</p>
+      <span class="section-tag" data-i18n="svp_tag">Integrated Advisory Capabilities</span>
+      <h1 data-i18n="svp_title">Comprehensive Solutions for Cross-Border Challenges.</h1>
+      <p data-i18n="svp_body">Finora integrates financial analysis, cross-border strategy, and regulatory navigation into unified engagement frameworks designed for international matters.</p>
     </div>
   </div>
   <section class="section section-light">
@@ -921,91 +939,91 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
       <div class="grid-auto">
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
-          <h3 class="card-title" data-i18n="sv1_title">Grenzüberschreitende Finanzstreitigkeiten</h3>
-          <p class="card-text" data-i18n="sv1_full">Strategische Beratung bei komplexen internationalen Wirtschaftskonflikten mit Beteiligung mehrerer Rechtsordnungen, ausländischer Gesellschaften und grenzüberschreitender Finanzbeziehungen.</p>
+          <h3 class="card-title" data-i18n="sv1_title">Cross-Border Financial Disputes</h3>
+          <p class="card-text" data-i18n="sv1_full">Resolution strategies for complex international commercial conflicts involving multiple legal jurisdictions, foreign corporate entities, and sovereign risk.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv1_f1">Bewertung und Auswahl der optimalen Gerichtsstände</li>
-            <li data-i18n="sv1_f2">Minimierung grenzüberschreitender Haftungs- und Finanzrisiken</li>
-            <li data-i18n="sv1_f3">Harmonisierung ausländischer Streitverfahren</li>
+            <li data-i18n="sv1_f1">Jurisdictional forum selection and strategy</li>
+            <li data-i18n="sv1_f2">Cross-border exposure mitigation</li>
+            <li data-i18n="sv1_f3">Harmonisation of foreign legal strategies</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-          <h3 class="card-title" data-i18n="sv2_title">Verfolgung Digitaler Vermögenswerte</h3>
-          <p class="card-text" data-i18n="sv2_full">Evidenzbasierte Rekonstruktion komplexer Transaktionen auf verteilten Hauptbüchern, Cross-Chain-Transfers und verschleierten Asset-Strukturen.</p>
+          <h3 class="card-title" data-i18n="sv2_title">Digital Asset Tracing &amp; On-Chain Analysis</h3>
+          <p class="card-text" data-i18n="sv2_full">Forensic reconstruction of complex distributed ledger transactions, cross-chain transfers, and obfuscated digital asset flows.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv2_f1">Gerichtsfeste Blockchain- und Forensikanalyse</li>
-            <li data-i18n="sv2_f2">Identifikation relevanter institutioneller Schnittstellen</li>
-            <li data-i18n="sv2_f3">Erstellung gerichtsverwertbarer Expertise-Berichte</li>
+            <li data-i18n="sv2_f1">Evidence-led blockchain transaction analysis</li>
+            <li data-i18n="sv2_f2">Identification of institutional counterparty touchpoints</li>
+            <li data-i18n="sv2_f3">Forensic reporting built for judicial scrutiny</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
-          <h3 class="card-title" data-i18n="sv3_title">Gerichtliche Offenlegungsstrategien</h3>
-          <p class="card-text" data-i18n="sv3_full">Konzeption und Vorbereitung internationaler Auskunfts- und Offenlegungsverfahren zur Beschaffung entscheidungsrelevanter Finanzdaten.</p>
+          <h3 class="card-title" data-i18n="sv3_title">Court-Directed Disclosure Strategies</h3>
+          <p class="card-text" data-i18n="sv3_full">Strategic design and preparation for international disclosure proceedings to unearth critical financial records and legal assets.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv3_f1">Grenzüberschreitende Informationsbeschaffungskonzepte</li>
-            <li data-i18n="sv3_f2">Vorbereitung von Anträgen gegenüber Drittparteien</li>
-            <li data-i18n="sv3_f3">Abstimmung auf internationale Beweiserhebungsstandards</li>
+            <li data-i18n="sv3_f1">Cross-border information gathering frameworks</li>
+            <li data-i18n="sv3_f2">Coordination of third-party disclosure strategies</li>
+            <li data-i18n="sv3_f3">Alignment with foreign court application standards</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
-          <h3 class="card-title" data-i18n="sv4_title">Forensische Finanzanalyse</h3>
-          <p class="card-text" data-i18n="sv4_full">Unabhängige Untersuchung vielschichtiger internationaler Buchhaltungsstrukturen, Zahlungsströme und geschäftlicher Transaktionen.</p>
+          <h3 class="card-title" data-i18n="sv4_title">Financial Forensic Analysis</h3>
+          <p class="card-text" data-i18n="sv4_full">Independent examination of sophisticated international accounting structures, transaction histories, and commercial records.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv4_f1">Rekonstruktion komplexer internationaler Finanzströme</li>
-            <li data-i18n="sv4_f2">Quantifizierung grenzüberschreitender Schadenspositionen</li>
-            <li data-i18n="sv4_f3">Aufbereitung von Entscheidungsgrundlagen für Aufsichtsgremien</li>
+            <li data-i18n="sv4_f1">Reconstructing complex international payment trails</li>
+            <li data-i18n="sv4_f2">Quantifying cross-border financial harm and claims</li>
+            <li data-i18n="sv4_f3">Preparation of expert financial briefings</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3 class="card-title" data-i18n="sv5_title">Internationales Litigationsmanagement</h3>
-          <p class="card-text" data-i18n="sv5_full">Zentrale Koordination und strategische Führung von Anwalts- und Expertenteams über verschiedene ausländische Jurisdiktionen hinweg.</p>
+          <h3 class="card-title" data-i18n="sv5_title">International Litigation Coordination</h3>
+          <p class="card-text" data-i18n="sv5_full">Strategic direction and oversight of multidisciplinary teams, local legal counsel, and technical experts across foreign jurisdictions.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv5_f1">Konsistente Gesamtausrichtung mehrspuriger Verfahren</li>
-            <li data-i18n="sv5_f2">Effiziente Führung lokaler Rechtsbeistände</li>
-            <li data-i18n="sv5_f3">Zentrale Berichterstattung an Führungsgremien</li>
+            <li data-i18n="sv5_f1">Centralised management of multi-jurisdictional proceedings</li>
+            <li data-i18n="sv5_f2">Single-point-of-contact executive reporting</li>
+            <li data-i18n="sv5_f3">Cost and resource alignment across foreign advisers</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
-          <h3 class="card-title" data-i18n="sv6_title">Regulatorische Koordination &amp; Strategie</h3>
-          <p class="card-text" data-i18n="sv6_full">Empfängerorientierte Verfahrenssteuerung und strategische Kommunikation im Kontext internationaler Behörden- und Regulierungsverfahren.</p>
+          <h3 class="card-title" data-i18n="sv6_title">Regulatory Engagement &amp; Strategy</h3>
+          <p class="card-text" data-i18n="sv6_full">Procedural navigation and strategic communication alongside international regulatory bodies, enforcement agencies, and financial authorities.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv6_f1">Grenzüberschreitende Abgleichung regulatorischer Vorgaben</li>
-            <li data-i18n="sv6_f2">Betreuung internationaler Auskunftsersuchen</li>
-            <li data-i18n="sv6_f3">Strategische Begleitung formeller Behördenkontakte</li>
+            <li data-i18n="sv6_f1">Cross-border regulatory compliance alignment</li>
+            <li data-i18n="sv6_f2">Managing multi-jurisdictional information requests</li>
+            <li data-i18n="sv6_f3">Strategic advisory for formal authority communications</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-          <h3 class="card-title" data-i18n="sv7_title">Beweissicherung &amp; Datenmanagement</h3>
-          <p class="card-text" data-i18n="sv7_full">Protokollierte Erfassung, Aufbereitung und Sicherung digitaler und dokumentarischer Beweismittel gemäß internationalen Verfahrensstandards.</p>
+          <h3 class="card-title" data-i18n="sv7_title">Evidence Preservation &amp; Management</h3>
+          <p class="card-text" data-i18n="sv7_full">Protocol-driven identification, collection, and preservation of digital and documentary evidence across international legal standards.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv7_f1">Sicherstellung einer lückenlosen Beweismittelkette</li>
-            <li data-i18n="sv7_f2">Einhaltung internationaler Datenschutzbestimmungen</li>
-            <li data-i18n="sv7_f3">Vorbereitung gerichtlich verwertbarer Beweismitteldossiers</li>
+            <li data-i18n="sv7_f1">Secure cross-border evidentiary chain of custody</li>
+            <li data-i18n="sv7_f2">Compliance with international data protection requirements</li>
+            <li data-i18n="sv7_f3">Multi-jurisdictional evidence audit readiness</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
         <div class="card card-hover" onclick="showPage('contact')">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon-accent"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <h3 class="card-title" data-i18n="sv8_title">Internationale Vollstreckungsplanung</h3>
-          <p class="card-text" data-i18n="sv8_full">Vorausschauende Strategieentwicklung zur wirtschaftlichen Realisierung von Ansprüchen oder Urteilen über Ländergrenzen hinweg.</p>
+          <h3 class="card-title" data-i18n="sv8_title">International Enforcement Planning</h3>
+          <p class="card-text" data-i18n="sv8_full">Pre-litigation and post-judgment enforcement strategies designed to ensure practical commercial realisation across international borders.</p>
           <ul style="margin-top:.85rem;margin-left:1.2rem;font-size:.82rem;color:var(--text-muted);line-height:1.7">
-            <li data-i18n="sv8_f1">Bewertung der Durchsetzbarkeit in Zielstaaten</li>
-            <li data-i18n="sv8_f2">Koordination internationaler Anerkennungsverfahren</li>
-            <li data-i18n="sv8_f3">Zusammenarbeit mit lokalen Vollstreckungsorganen</li>
+            <li data-i18n="sv8_f1">Global asset visibility and enforceability assessments</li>
+            <li data-i18n="sv8_f2">Coordination of cross-border recognition proceedings</li>
+            <li data-i18n="sv8_f3">Execution planning with foreign enforcement authorities</li>
           </ul>
-          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Konsultation anfragen →</button>
+          <button class="btn btn-accent btn-sm mt-3" onclick="showPage('contact')" data-i18n="sv_cta">Request Consultation →</button>
         </div>
       </div>
     </div>
@@ -1018,74 +1036,74 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
 <div class="page" id="page-process">
   <div class="page-header">
     <div class="container">
-      <span class="section-tag" data-i18n="proc_tag">Methodik</span>
-      <h1 data-i18n="proc_title">Strukturierte Vorgehensweise bei grenzüberschreitender Komplexität.</h1>
+      <span class="section-tag" data-i18n="proc_tag">Advisory Methodology</span>
+      <h1 data-i18n="proc_title">A Strategic, Controlled Approach to Cross-Border Complexity.</h1>
     </div>
   </div>
   <section class="section section-alt">
     <div class="container">
       <!-- Flow diagram -->
       <div class="process-flow" aria-hidden="true">
-        <span class="pf-node active" data-i18n="pf1">01. Erstanalyse</span>
+        <span class="pf-node active" data-i18n="pf1">01. Initial Review</span>
         <span class="pf-arrow">→</span>
-        <span class="pf-node active" data-i18n="pf2">02. Synthese</span>
+        <span class="pf-node active" data-i18n="pf2">02. Evidence Synthesis</span>
         <span class="pf-arrow">→</span>
-        <span class="pf-node active" data-i18n="pf3">03. Forensik</span>
+        <span class="pf-node active" data-i18n="pf3">03. Forensic Analysis</span>
         <span class="pf-arrow">→</span>
-        <span class="pf-node" data-i18n="pf4">04. Jurisdiktionsprüfung</span>
+        <span class="pf-node" data-i18n="pf4">04. Jurisdictional Audit</span>
         <span class="pf-arrow">→</span>
-        <span class="pf-node" data-i18n="pf5">05. Strategieplan</span>
+        <span class="pf-node" data-i18n="pf5">05. Strategic Plan</span>
         <span class="pf-arrow">→</span>
-        <span class="pf-node" data-i18n="pf6">06. Umsetzung</span>
+        <span class="pf-node" data-i18n="pf6">06. Resolution Execution</span>
       </div>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem">
         <div class="process-step">
           <div class="process-num">01</div>
           <div>
-            <div class="process-title" data-i18n="proc_1_t">Erstanalyse &amp; Risikobewertung</div>
-            <p class="process-text" data-i18n="proc_1_d">Erste Einschätzung der Ausgangslage, der betroffenen Jurisdiktionen und der unmittelbar bestehenden Risiken zur Festlegung des Handlungsbedarfs.</p>
+            <div class="process-title" data-i18n="proc_1_t">Initial Assessment &amp; Risk Audit</div>
+            <p class="process-text" data-i18n="proc_1_d">Preliminary evaluation of the matter, jurisdictional touchpoints, and immediate exposure parameters to determine strategic viability.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">02</div>
           <div>
-            <div class="process-title" data-i18n="proc_2_t">Dokumenten- &amp; Evidenzsynthese</div>
-            <p class="process-text" data-i18n="proc_2_d">Systematische Sichtung und Strukturierung der vorliegenden Finanzdaten, Verträge, Gesellschaftsstrukturen und Korrespondenzen.</p>
+            <div class="process-title" data-i18n="proc_2_t">Evidence &amp; Documentation Synthesis</div>
+            <p class="process-text" data-i18n="proc_2_d">Systematic review of available financial records, corporate structures, contracts, and digital correspondence to establish factual foundation.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">03</div>
           <div>
-            <div class="process-title" data-i18n="proc_3_t">Forensische &amp; Technische Untersuchung</div>
-            <p class="process-text" data-i18n="proc_3_d">Unabhängige Durchführung von Finanzstromanalysen, Blockchain-Traceability oder buchhalterischen Auswertungen zur Faktenermittlung.</p>
+            <div class="process-title" data-i18n="proc_3_t">Forensic &amp; Technical Analysis</div>
+            <p class="process-text" data-i18n="proc_3_d">Independent execution of transaction tracing, blockchain forensics, or financial accounting reconstruction to substantiate claims.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">04</div>
           <div>
-            <div class="process-title" data-i18n="proc_4_t">Jurisdiktions- &amp; Regulierungsprüfung</div>
-            <p class="process-text" data-i18n="proc_4_d">Vergleichende Analyse der Anwendbarkeit verschiedener Rechtsordnungen, Durchsetzungswege und behördlicher Rahmenbedingungen.</p>
+            <div class="process-title" data-i18n="proc_4_t">Jurisdictional &amp; Regulatory Mapping</div>
+            <p class="process-text" data-i18n="proc_4_d">Comparative evaluation of foreign legal frameworks, enforcement mechanisms, and regulatory environments relevant to the matter.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">05</div>
           <div>
-            <div class="process-title" data-i18n="proc_5_t">Integrierte Strategieentwicklung</div>
-            <p class="process-text" data-i18n="proc_5_d">Erstellung eines übergreifenden Strategiekonzepts, das wirtschaftliche Ziele, juristische Schritte und Maßnahmen zur Wertabsicherung verbindet.</p>
+            <div class="process-title" data-i18n="proc_5_t">Integrated Strategy Formulation</div>
+            <p class="process-text" data-i18n="proc_5_d">Development of a master strategic plan aligning commercial objectives, legal actions, and asset preservation pathways.</p>
           </div>
         </div>
         <div class="process-step">
           <div class="process-num">06</div>
           <div>
-            <div class="process-title" data-i18n="proc_6_t">Koordinierte Umsetzung &amp; Durchsetzung</div>
-            <p class="process-text" data-i18n="proc_6_d">Zielgerichtete Mandatierung und Führung lokaler Fachexperten und Anwälte zur konsequenten Realisierung der definierten Strategie.</p>
+            <div class="process-title" data-i18n="proc_6_t">Coordinated Execution &amp; Enforcement</div>
+            <p class="process-text" data-i18n="proc_6_d">Active direction of local counsel, foreign experts, and institutional engagement to carry out the strategy to commercial resolution.</p>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="proc_cta">Beratungssitzung anfragen</button>
+        <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="proc_cta">Request Advisory Consultation</button>
       </div>
     </div>
   </section>
@@ -1098,7 +1116,7 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   <div class="page-header">
     <div class="container">
       <span class="section-tag" data-i18n="faq_tag">Insights &amp; FAQ</span>
-      <h1 data-i18n="faq_title">Häufig gestellte Fragen</h1>
+      <h1 data-i18n="faq_title">Frequently Asked Questions</h1>
     </div>
   </div>
   <section class="section section-alt">
@@ -1106,44 +1124,44 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
       <div class="card">
         <div class="accordion-item">
           <button class="accordion-btn" onclick="toggleFaq(this)" aria-expanded="false">
-            <span data-i18n="faq1_q">Worin unterscheidet sich Finora von einer internationalen Anwaltskanzlei oder Unternehmensberatung?</span>
+            <span data-i18n="faq1_q">How does Finora differ from an international law firm or management consultancy?</span>
             <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="accordion-body"><span data-i18n="faq1_a">Finora ist eine unabhängige grenzüberschreitende Beratungspraxis. Während Kanzleien primär auf die Vertretung innerhalb spezifischer Rechtsordnungen fokussiert sind und Unternehmensberatungen meist operative Prozesse behandeln, liefert Finora die übergeordnete kaufmännische Strategie, die finanzforensische Analyse und die Koordination lokaler Partner über mehrere Jurisdiktionen hinweg.</span></div>
+          <div class="accordion-body"><span data-i18n="faq1_a">Finora is an independent cross-border advisory firm. Unlike traditional law firms, which focus strictly on legal representation within specific jurisdictions, or management consultancies that focus on broad operations, Finora provides overarching commercial strategy, forensic analysis, and central coordination across multiple foreign jurisdictions and legal disciplines.</span></div>
         </div>
         <div class="accordion-item">
           <button class="accordion-btn" onclick="toggleFaq(this)" aria-expanded="false">
-            <span data-i18n="faq2_q">Tritt Finora direkt vor Gerichten als Prozessvertreter auf?</span>
+            <span data-i18n="faq2_q">Does Finora provide legal representation directly in court?</span>
             <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="accordion-body"><span data-i18n="faq2_a">Nein. Finora übernimmt keine direkte gerichtliche Vertretung. Wir entwickeln die übergeordnete internationale Gesamtstrategie, führen die notwendigen forensischen Untersuchungen durch und steuern im Auftrag des Mandanten spezialisierte Rechtsanwälte in den jeweiligen Zielländern.</span></div>
+          <div class="accordion-body"><span data-i18n="faq2_a">Finora does not act as court litigation counsel. We design overarching cross-border strategies, conduct financial and technical forensics, and direct specialised local law firms in each relevant jurisdiction to execute the strategy in court on our client's behalf.</span></div>
         </div>
         <div class="accordion-item">
           <button class="accordion-btn" onclick="toggleFaq(this)" aria-expanded="false">
-            <span data-i18n="faq3_q">Welche Mandanten berät Finora?</span>
+            <span data-i18n="faq3_q">What types of clients does Finora advise?</span>
             <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="accordion-body"><span data-i18n="faq3_a">Wir beraten ausschließlich Entscheidungsträger aus dem Unternehmens- und Finanzbereich: Geschäftsführer, Vorstände, Family Offices, institutionelle Investoren, General Counsels sowie Insolvenzverwalter bei komplexen, grenzüberschreitenden Fragestellungen.</span></div>
+          <div class="accordion-body"><span data-i18n="faq3_a">We advise senior decision-makers, including CEOs, board members, family offices, institutional investors, general counsel, insolvency practitioners, and corporate legal teams facing high-value, multi-jurisdictional financial or legal challenges.</span></div>
         </div>
         <div class="accordion-item">
           <button class="accordion-btn" onclick="toggleFaq(this)" aria-expanded="false">
-            <span data-i18n="faq4_q">Wie wird die Vertraulichkeit im Rahmen internationaler Mandate gewahrt?</span>
+            <span data-i18n="faq4_q">How does Finora maintain confidentiality during cross-border engagements?</span>
             <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="accordion-body"><span data-i18n="faq4_a">Sämtliche Anfragen und Mandate unterliegen strengen beruflichen Vertraulichkeits- und Datenschutzstandards. Sofern erforderlich, wird unsere Arbeit in Abstimmung mit Rechtsberatern so strukturiert, dass sie unter das jeweilige anwaltschaftliche Berufsgeheimnis (Legal Professional Privilege) fällt.</span></div>
+          <div class="accordion-body"><span data-i18n="faq4_a">Strict professional confidentiality and data security protocols govern every client interaction. Where appropriate, our work is structured in coordination with legal counsel to fall under legal professional privilege across relevant jurisdictions.</span></div>
         </div>
         <div class="accordion-item">
           <button class="accordion-btn" onclick="toggleFaq(this)" aria-expanded="false">
-            <span data-i18n="faq5_q">Wann ist der optimale Zeitpunkt für eine Einbindung von Finora?</span>
+            <span data-i18n="faq5_q">At what stage of a matter should Finora be engaged?</span>
             <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-          <div class="accordion-body"><span data-i18n="faq5_a">Eine Beauftragung ist bei den ersten Anzeichen grenzüberschreitender Komplexität am wirkungsvollsten – idealerweise vor Einleitung formeller gerichtlicher Schritte. So können Handlungsoptionen frühzeitig bewertet, Beweismittel gesichert und die Wahl der Jurisdiktionen optimal ausgerichtet werden.</span></div>
+          <div class="accordion-body"><span data-i18n="faq5_a">Finora is most effective when engaged at the earliest sign of cross-border complexity or friction — often prior to initiating formal legal proceedings. Early engagement allows us to shape the international strategy, preserve evidence, and evaluate jurisdictional choices before positions harden.</span></div>
         </div>
       </div>
 
       <div style="text-align:center;margin-top:3rem">
-        <p style="color:var(--text-muted);margin-bottom:1.25rem;font-size:.95rem" data-i18n="faq_contact_prompt">Haben Sie eine spezifische Frage zu Ihrem Sachverhalt?</p>
-        <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="faq_contact_btn">Vertrauliche Anfrage stellen</button>
+        <p style="color:var(--text-muted);margin-bottom:1.25rem;font-size:.95rem" data-i18n="faq_contact_prompt">Do you have a specific question about your matter?</p>
+        <button class="btn btn-accent" onclick="showPage('contact')" data-i18n="faq_contact_btn">Submit a Confidential Enquiry</button>
       </div>
     </div>
   </section>
@@ -1155,9 +1173,9 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
 <div class="page" id="page-contact">
   <div class="page-header">
     <div class="container">
-      <span class="section-tag" data-i18n="contact_tag">Vertrauliche Anfrage</span>
-      <h1 data-i18n="contact_title">Einleitung einer Strategischen Konsultation.</h1>
-      <p data-i18n="contact_intro">Unser Beraterkreis steht qualifizierten Vertretern von Unternehmen, Institutionen und Kanzleien für eine vertrauliche Erstbewertung zur Verfügung.</p>
+      <span class="section-tag" data-i18n="contact_tag">Advisory Enquiries</span>
+      <h1 data-i18n="contact_title">Initiate a Confidential Discussion.</h1>
+      <p data-i18n="contact_intro">Our senior advisory team is available to review complex cross-border matters for qualified corporate, institutional, and professional clients.</p>
     </div>
   </div>
   <section class="section section-light">
@@ -1167,13 +1185,13 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
         <div class="card">
           <div class="notice-box">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span data-i18n="contact_notice">Alle Übermittlungen werden direkt von unseren erfahrenen Beratern entgegengenommen und unter strikter Geheimhaltung behandelt.</span>
+            <span data-i18n="contact_notice">All communications are received directly by our senior advisory team and handled with strict professional confidentiality.</span>
           </div>
 
           <div id="contact-success" class="success-box hidden">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" style="stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto"><polyline points="20 6 9 17 4 12"/></svg>
-            <h3 data-i18n="contact_success_title">Anfrage erfolgreich übermittelt</h3>
-            <p data-i18n="contact_success_text">Unser Beraterteam wird Ihre Anfrage prüfen und sich kurzfristig mit Ihnen in Verbindung setzen.</p>
+            <h3 data-i18n="contact_success_title">Request Successfully Submitted</h3>
+            <p data-i18n="contact_success_text">Our senior advisory team will review your request and contact you shortly to discuss the appropriate pathway forward.</p>
           </div>
 
           <form id="contact-form"
@@ -1182,51 +1200,51 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
                 onsubmit="submitContact(event)">
             <input type="hidden" name="_subject" value="New Advisory Consultation - Finora">
             <div class="form-row">
-              <div class="form-group"><label data-i18n="contact_firstname">Vorname *</label><input type="text" id="c-firstname" name="first_name" required autocomplete="given-name"/></div>
-              <div class="form-group"><label data-i18n="contact_lastname">Nachname *</label><input type="text" id="c-lastname" name="last_name" required autocomplete="family-name"/></div>
+              <div class="form-group"><label data-i18n="contact_firstname">First Name *</label><input type="text" id="c-firstname" name="first_name" required autocomplete="given-name"/></div>
+              <div class="form-group"><label data-i18n="contact_lastname">Last Name *</label><input type="text" id="c-lastname" name="last_name" required autocomplete="family-name"/></div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label data-i18n="contact_email">Geschäftliche E-Mail-Adresse *</label><input type="email" id="c-email" name="email" required autocomplete="email"/></div>
-              <div class="form-group"><label data-i18n="contact_phone">Telefonnummer (optional)</label><input type="tel" id="c-phone" name="phone" autocomplete="tel"/></div>
+              <div class="form-group"><label data-i18n="contact_email">Corporate Email Address *</label><input type="email" id="c-email" name="email" required autocomplete="email"/></div>
+              <div class="form-group"><label data-i18n="contact_phone">Direct Telephone (Optional)</label><input type="tel" id="c-phone" name="phone" autocomplete="tel"/></div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label data-i18n="contact_org">Unternehmen / Kanzlei *</label><input type="text" id="c-org" name="organization" required/></div>
-              <div class="form-group"><label data-i18n="contact_role">Position / Funktion *</label><input type="text" id="c-role" name="role" required/></div>
+              <div class="form-group"><label data-i18n="contact_org">Organisation / Firm Name *</label><input type="text" id="c-org" name="organization" required/></div>
+              <div class="form-group"><label data-i18n="contact_role">Executive Role / Title *</label><input type="text" id="c-role" name="role" required/></div>
             </div>
             <div class="form-group">
-              <label data-i18n="contact_type">Art der Angelegenheit *</label>
+              <label data-i18n="contact_type">Nature of Matter *</label>
               <select id="c-type" name="matter_type" required>
-                <option value="" data-i18n="contact_type_select">— bitte auswählen —</option>
-                <option value="cross_border" data-i18n="case_t_1">Grenzüberschreitende Finanzstreitigkeit</option>
-                <option value="asset_tracing" data-i18n="case_t_2">Verfolgung digitaler Vermögenswerte</option>
-                <option value="regulatory" data-i18n="case_t_6">Regulatorische Koordination</option>
-                <option value="advisory" data-i18n="case_t_adv">Allgemeine strategische Beratung</option>
+                <option value="" data-i18n="contact_type_select">— Select Primary Area —</option>
+                <option value="cross_border" data-i18n="case_t_1">Cross-Border Dispute</option>
+                <option value="asset_tracing" data-i18n="case_t_2">Asset Tracing</option>
+                <option value="regulatory" data-i18n="case_t_6">Regulatory Engagement</option>
+                <option value="advisory" data-i18n="case_t_adv">General Advisory</option>
               </select>
             </div>
-            <div class="form-group"><label data-i18n="contact_jurisdictions">Betroffene Jurisdiktionen</label><input type="text" id="c-jurisdictions" name="jurisdictions" placeholder="z. B. Deutschland, Schweiz, UK, Offshore" data-i18n-placeholder="contact_juris_ph"/></div>
-            <div class="form-group"><label data-i18n="contact_summary">Kurzdarstellung des Sachverhalts *</label><textarea id="c-summary" name="matter_summary" rows="5" required placeholder="Prägnante Zusammenfassung der komplexen Ausgangslage…" data-i18n-placeholder="contact_summary_ph"></textarea></div>
+            <div class="form-group"><label data-i18n="contact_jurisdictions">Jurisdictions Involved</label><input type="text" id="c-jurisdictions" name="jurisdictions" placeholder="e.g., UK, Switzerland, Germany, Offshore Jurisdictions" data-i18n-placeholder="contact_juris_ph"/></div>
+            <div class="form-group"><label data-i18n="contact_summary">Executive Summary of Matter *</label><textarea id="c-summary" name="matter_summary" rows="5" required placeholder="Brief factual overview of the cross-border challenge…" data-i18n-placeholder="contact_summary_ph"></textarea></div>
             <button type="submit" class="btn btn-accent btn-full" id="contact-submit">
-              <span data-i18n="contact_send">Vertrauliche Beratungssitzung Anfragen</span>
+              <span data-i18n="contact_send">Submit Request for Consultation</span>
             </button>
-            <div style="font-size:.72rem;color:var(--text-dim);text-align:center;margin-top:.7rem" data-i18n="contact_disclaimer">Professionelle Vertraulichkeit · Absolute Diskretion · DSGVO</div>
+            <div style="font-size:.72rem;color:var(--text-dim);text-align:center;margin-top:.7rem" data-i18n="contact_disclaimer">Professional Confidentiality · Absolute Discretion · GDPR</div>
           </form>
         </div>
 
         <!-- Contact Info -->
         <div>
           <div class="card mb-3">
-            <h3 style="font-size:1rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif);font-weight:700" data-i18n="contact_details_title">Kontaktdaten &amp; Standorte</h3>
+            <h3 style="font-size:1rem;color:var(--text);margin-bottom:1rem;font-family:var(--serif);font-weight:700" data-i18n="contact_details_title">Direct Contact Details</h3>
             <div class="footer-contact-item">
               <svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
-                <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin-bottom:.2rem" data-i18n="contact_addr_reg_label">Registrierter Sitz</div>
+                <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin-bottom:.2rem" data-i18n="contact_addr_reg_label">Registered Advisory Office</div>
                 <span style="color:var(--text-muted);font-size:.8rem">Rue d'Ormône 97, 1965 Savièse, Switzerland</span>
               </div>
             </div>
             <div class="footer-contact-item" style="margin-top:.75rem">
               <svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
-                <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin-bottom:.2rem" data-i18n="contact_addr_zurich_label">Büro Zürich</div>
+                <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin-bottom:.2rem" data-i18n="contact_addr_zurich_label">Zurich Office</div>
                 <span style="color:var(--text-muted);font-size:.8rem">Bahnhofstrasse 100, 8001 Zürich, Schweiz</span>
               </div>
             </div>
@@ -1236,18 +1254,18 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
             </div>
             <div class="footer-contact-item">
               <svg class="footer-contact-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--accent)" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span style="color:var(--text-muted);font-size:.8rem" data-i18n="contact_hours">Mo–Fr: 09:00–18:00 Uhr (MEZ)</span>
+              <span style="color:var(--text-muted);font-size:.8rem" data-i18n="contact_hours">Mon–Fri: 09:00–18:00 (CET)</span>
             </div>
           </div>
 
           <!-- Professional Standards Notice -->
           <div class="card">
-            <h3 style="font-size:.95rem;color:var(--text);margin-bottom:.75rem;font-family:var(--serif);font-weight:700" data-i18n="contact_standards_title">Berufsrechtlicher Hinweis</h3>
-            <p style="font-size:.82rem;color:var(--text-muted);line-height:1.65" data-i18n="contact_standards_text">Finora erbringt strategische Beratungsdienstleistungen. Finora ist kein Kreditinstitut, keine Bank, kein Softwareanbieter und keine Anwaltskanzlei.</p>
+            <h3 style="font-size:.95rem;color:var(--text);margin-bottom:.75rem;font-family:var(--serif);font-weight:700" data-i18n="contact_standards_title">Professional Standards Notice</h3>
+            <p style="font-size:.82rem;color:var(--text-muted);line-height:1.65" data-i18n="contact_standards_text">Finora provides strategic advisory services. Finora is not a retail financial institution, bank, lender, software provider, or law firm.</p>
             <div style="display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.85rem">
               <span class="chip">GDPR</span>
               <span class="chip" data-i18n="badge_intl">International</span>
-              <span class="chip" data-i18n="badge_conf">Vertraulich</span>
+              <span class="chip" data-i18n="badge_conf">Confidential</span>
             </div>
           </div>
         </div>
@@ -1256,9 +1274,6 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   </section>
 </div><!-- /page-contact -->
 
-<!-- ════════════════════════════════════
-     LEGAL NOTICE / IMPRESSUM
-════════════════════════════════════ -->
 <div class="page" id="page-imprint">
   <div class="page-header"><div class="container"><h1 data-i18n="imprint_title">Legal Notice / Impressum</h1></div></div>
   <section class="section section-alt"><div class="container"><div class="prose">
@@ -1715,9 +1730,7 @@ html[lang="ar"] [data-legal-lang="en"] [data-i18n]{direction:rtl;text-align:righ
   </div>
 </footer>
 
-<!-- ════════════════════════════════════
-     JAVASCRIPT
-════════════════════════════════════ -->
+
 <script>
 /* ─── TRANSLATIONS ─── */
 var T = {
@@ -2405,11 +2418,157 @@ var T = {
     imp_email:'البريد الإلكتروني:',
     nav_terms:'شروط الاستخدام'
   }
+,
+  ja:{
+    nav_home:'ホーム',nav_about:'会社概要',nav_services:'業務分野',nav_process:'戦略とプロセス',nav_faq:'FAQ',nav_contact:'お問い合わせ',
+    nav_cta:'アドバイザリー相談を申し込む',nav_imprint:'法的通知',nav_privacy:'プライバシーポリシー',nav_terms:'利用規約',
+    meta_title:'Finora | クロスボーダー・アドバイザリーと戦略的財務課題',
+    meta_desc:'複雑な金融・法務・商務案件に対し、明確な戦略と国境を越えた専門知見の連携を提供する独立系国際アドバイザリーファーム。',
+    scroll_txt:'スクロール',err_submit:'送信に失敗しました。もう一度お試しください。',err_connect:'接続できません。もう一度お試しください。',
+    imp_legal_form:'法的形態:合名会社(SNC)',imp_seat:'所在地:Savièse',imp_status:'ステータス:稼働中',imp_email:'メール:',
+    hero_tag:'独立系クロスボーダー・アドバイザリー',
+    hero_title:'国境を越える複雑な金融・法務・商務課題を、戦略的に導きます。',
+    hero_sub:'Finoraは、経営幹部、機関投資家、法務責任者の皆様に、高額かつ複雑な国際案件の解決に必要な戦略的な明確さ、守秘性、そして連携された専門知見を提供します。',
+    hero_cta:'アドバイザリー相談を申し込む',hero_secondary:'業務分野を見る',
+    quick_form_title:'アドバイザリー相談を申し込む',
+    quick_form_sub:'すべてのご連絡は、当社のシニアアドバイザーが直接受け取り、厳格な職業上の守秘義務のもとで取り扱います。',
+    quick_firstname:'名 *',quick_lastname:'姓 *',quick_email:'勤務先メールアドレス *',quick_org:'組織名 / 事務所名 *',
+    quick_submit:'送信する',quick_disclaimer:'職業上の守秘義務 · 完全な機密保持 · GDPR',
+    quick_success_title:'お申し込みを受け付けました',quick_success_text:'当社のシニアアドバイザーが内容を確認し、まもなくご連絡いたします。',quick_reset:'新規申し込み',
+    stat_v1:'連携',stat_l1:'国境を越える専門性',stat_v2:'商業的',stat_l2:'戦略的思考',stat_v3:'慎重',stat_l3:'完全な機密保持',stat_v4:'決断力',stat_l4:'実行可能な選択肢',
+    inst_tag:'戦略的ポジショニング',
+    inst_title:'管轄、資本、法が交わる地点に、戦略的な明確さを。',
+    inst_body1:'複雑な国際案件が、単一の管轄や従来の専門分野の枠内に収まることはまれです。金融上のエクスポージャー、国境を越える紛争、複数管轄にまたがる資産構造が運営上・法務上の停滞を招くとき、組織に必要なのは事後対応型の助言ではなく、全体を見渡す戦略です。',
+    inst_body2:'Finoraは、独立系の国際クロスボーダー・アドバイザリーファームとして活動しています。商業的な洞察、フォレンジックの規律、法務上の整合を組み合わせ、経営陣、ファミリーオフィス、機関が複雑な国際案件の主導権を取り戻すお手伝いをします。',
+    inst_d1_q:'「当社は銀行でも、貸し手でも、法律事務所でも、ソフトウェアベンダーでもありません。独立したクロスボーダーのアドバイザーとして、確信、明確さ、そして実践的な解決策をお届けします。」',
+    inst_d1_t:'独立したアドバイザリー',inst_d1_s:'組織的な利益相反なし · 完全にクライアント本位',
+    inst_d2_q:'「当社の評価は、抽象的な法理論よりも、法的な実現可能性、財務上の実行力、長期的な商業的影響を優先します。」',
+    inst_d2_t:'商業的思考',inst_d2_s:'商業目標 · 実践的な解決策 · 執行可能な成果',
+    services_tag:'戦略的ケイパビリティ',services_title:'連携した専門知見で、重大なクロスボーダー課題を解決します。',
+    sv_learn:'詳しく見る →',sv_cta:'相談を申し込む →',
+    sv1_title:'クロスボーダー金融紛争',sv1_title_short:'金融紛争',
+    sv1_text:'複雑な商事紛争や機関のエクスポージャーに対する、複数管轄にまたがる戦略と整合。',
+    sv1_full:'複数の法域、外国法人、ソブリンリスクが関わる複雑な国際商事紛争の解決戦略。',
+    sv1_f1:'管轄(法廷地)の選定と戦略',sv1_f2:'クロスボーダー・エクスポージャーの低減',sv1_f3:'各国の法的戦略の調整',
+    sv2_title:'デジタル資産追跡とオンチェーン分析',sv2_title_short:'資産追跡',
+    sv2_text:'複雑なブロックチェーン取引や分散型台帳の構造に対する独立したフォレンジック調査。',
+    sv2_full:'複雑な分散型台帳取引、クロスチェーン送金、秘匿されたデジタル資産の流れをフォレンジックで再構築します。',
+    sv2_f1:'証拠に基づくブロックチェーン取引分析',sv2_f2:'機関側カウンターパーティとの接点の特定',sv2_f3:'司法の審査に耐えるフォレンジック報告',
+    sv3_title:'裁判所命令による開示戦略',sv3_title_short:'開示戦略',
+    sv3_text:'国際的な法的ルートを通じて財務情報を確保するための戦略的枠組みの策定。',
+    sv3_full:'重要な財務記録や法的資産を明らかにするための、国際的な開示手続の戦略設計と準備。',
+    sv3_f1:'国境を越える情報収集の枠組み',sv3_f2:'第三者開示戦略の調整',sv3_f3:'外国裁判所への申立て基準との整合',
+    sv4_title:'財務フォレンジック分析',sv4_title_short:'フォレンジック分析',
+    sv4_text:'機関の意思決定と国際訴訟を支える、厳密な取引の再構築。',
+    sv4_full:'高度な国際会計構造、取引履歴、商業記録に関する独立した調査。',
+    sv4_f1:'複雑な国際資金フローの再構築',sv4_f2:'クロスボーダーの財務的損害・請求額の算定',sv4_f3:'専門的な財務ブリーフィングの作成',
+    sv5_title:'国際訴訟コーディネーション',sv5_title_short:'訴訟コーディネーション',
+    sv5_text:'複数管轄で戦略の一貫性を保つため、海外の弁護士や技術専門家を指揮します。',
+    sv5_full:'海外管轄にまたがる多分野チーム、現地弁護士、技術専門家に対する戦略的な指揮と監督。',
+    sv5_f1:'複数管轄の手続の一元管理',sv5_f2:'単一窓口による経営層への報告',sv5_f3:'海外アドバイザー間のコストとリソースの調整',
+    sv6_title:'規制当局対応と戦略',sv6_title_short:'規制当局対応',
+    sv6_text:'国際的な当局や執行機関との、構造化されたコミュニケーションと手続の進行管理。',
+    sv6_full:'国際的な規制機関、執行当局、金融当局に対する手続上の対応と戦略的コミュニケーション。',
+    sv6_f1:'クロスボーダーの規制遵守の整合',sv6_f2:'複数管轄からの情報要請への対応',sv6_f3:'当局との正式な連絡に関する戦略的助言',
+    sv7_title:'証拠の保全と管理',
+    sv7_full:'国際的な法的基準に沿った、デジタル証拠および文書証拠の特定・収集・保全をプロトコルに基づき実施します。',
+    sv7_f1:'国境を越える証拠の保管連鎖(チェーン・オブ・カストディ)の確保',sv7_f2:'国際的なデータ保護要件の遵守',sv7_f3:'複数管轄における証拠監査への備え',
+    sv8_title:'国際的な執行計画',
+    sv8_full:'提訴前および判決後の執行戦略により、国境を越えて実際の商業的回収を確実にします。',
+    sv8_f1:'資産の所在把握と執行可能性の評価',sv8_f2:'クロスボーダーの承認手続の調整',sv8_f3:'外国の執行当局との実行計画',
+    eng_tag:'アドバイザリーの枠組み',eng_title:'戦略的コントロールへの体系的な道筋',
+    eng_s1_t:'機密レビュー',eng_s1_d:'国際的なエクスポージャー、資料、関係する管轄を即時に評価します。',
+    eng_s2_t:'戦略ブループリント',eng_s2_d:'商業目標を最優先とした、連携されたクロスボーダーのアプローチを策定します。',
+    eng_s3_t:'連携した実行',eng_s3_d:'関係するすべての地域で、多分野チーム、現地弁護士、専門家を指揮します。',
+    eng_more:'メソドロジー全体を見る →',
+    cta_tag:'機密アドバイザリー相談',cta_title:'複数管轄にまたがる複雑な課題に直面していますか?',
+    cta_sub:'当社のシニアアドバイザーに直接ご相談いただき、状況を整理し、戦略上の選択肢を評価し、最適な進め方を見極めましょう。',
+    cta_btn:'アドバイザリー相談を申し込む',
+    about_tag:'会社プロフィール',about_title:'相互につながる世界経済のための、独立した戦略アドバイザリー。',
+    about_ph_title:'クロスボーダーの複雑さに、明確さを取り戻す。',
+    about_ph_body1:'Finoraは、国際商取引における根強い課題、すなわち現地の法的対応と全体の商業戦略との間のギャップを埋めるために設立されました。',
+    about_ph_body2:'高額な金融紛争や資産エクスポージャーが複数の国にまたがる場合、企業は、連携のない法務チーム、相反する現地の助言、断片化したフォレンジックデータの管理に追われがちです。Finoraは、これらを調和させるために必要な、中心的な戦略的知見を提供します。',
+    about_ph_body3:'当社は銀行でも、貸し手でも、法律事務所でも、ソフトウェアベンダーでもありません。独立したクロスボーダーのアドバイザーとして、確信、明確さ、実践的な解決策をお届けします。複雑な国際案件を分析し、フォレンジックと法務の現実を統合し、商業的解決に必要な的確な戦略を組み立てることが当社の役割です。',
+    about_client_title:'主なクライアント',
+    about_client_intro:'Finoraは、経営幹部、機関関係者、専門職アドバイザーの信頼できるアドバイザーとしてのみ活動します。',
+    about_c1:'クロスボーダーの商取引上の摩擦や資産回収の局面にある経営者・事業オーナー',
+    about_c2:'国際的なポートフォリオ・エクスポージャーに戦略的な監督を求める機関投資家・ファミリーオフィス',
+    about_c3:'複数管轄にまたがる訴訟で外部の調整を必要とする法務責任者・法務チーム',
+    about_c4:'クロスボーダーの再建や資産追跡を担う破産管財人・アドバイザー',
+    about_values:'基本原則',
+    about_v1:'独立性',about_v1t:'組織的な利益相反から自由であり、当社の助言はクライアントの戦略的・商業的優先事項のみに基づきます。',
+    about_v2:'知的な厳密さ',about_v2t:'すべての提言は、検証済みのフォレンジックデータ、綿密な文書化、国境を越える執行可能性についての現実的な評価に基づいています。',
+    about_v3:'組織としての守秘性',about_v3t:'あらゆる手続を通じて、クライアントの評判と財務上の立場を守るため、完全な機密性をもって業務を行います。',
+    about_v4:'商業的な実践主義',about_v4t:'当社は、長引く手続ではなく、複数管轄にわたる課題の実践的かつ経済的な解決によって成功を測ります。',
+    about_expertise:'専門分野',
+    about_e1:'クロスボーダー金融紛争',about_e2:'デジタル資産追跡とオンチェーン分析',
+    about_e3:'裁判所命令による開示戦略と証拠保全',about_e4:'財務フォレンジック分析と取引の再構築',
+    about_e5:'国際訴訟のコーディネーションと管理',about_e6:'規制当局対応と当局間の調整',
+    about_e7:'証拠の保全とデータ管理',about_e8:'国際的な執行計画',
+    svp_tag:'統合的なアドバイザリー能力',svp_title:'クロスボーダー課題への包括的なソリューション。',
+    svp_body:'Finoraは、財務分析、クロスボーダー戦略、規制対応を、国際案件のための一体的な支援の枠組みに統合します。',
+    proc_tag:'アドバイザリー・メソドロジー',proc_title:'クロスボーダーの複雑さに対する、戦略的で統制の取れたアプローチ。',
+    pf1:'01. 初期レビュー',pf2:'02. 証拠の統合',pf3:'03. フォレンジック分析',pf4:'04. 管轄監査',pf5:'05. 戦略計画',pf6:'06. 解決の実行',
+    proc_1_t:'初期評価とリスク監査',proc_1_d:'案件、関係する管轄、差し迫ったエクスポージャーを予備的に評価し、戦略上の実現可能性を判断します。',
+    proc_2_t:'証拠・文書の統合',proc_2_d:'入手可能な財務記録、法人構造、契約、デジタル通信を体系的に精査し、事実の基盤を確立します。',
+    proc_3_t:'フォレンジック・技術分析',proc_3_d:'取引追跡、ブロックチェーン・フォレンジック、財務会計の再構築を独立して実施し、主張を裏付けます。',
+    proc_4_t:'管轄・規制のマッピング',proc_4_d:'案件に関係する外国の法制度、執行メカニズム、規制環境を比較評価します。',
+    proc_5_t:'統合戦略の策定',proc_5_d:'商業目標、法的措置、資産保全の道筋を整合させたマスター戦略計画を策定します。',
+    proc_6_t:'連携した実行と執行',proc_6_d:'現地弁護士、海外の専門家、機関との折衝を積極的に指揮し、戦略を商業的な解決へと導きます。',
+    proc_cta:'アドバイザリー相談を申し込む',
+    faq_tag:'インサイトとFAQ',faq_title:'よくあるご質問',
+    faq1_q:'Finoraは国際法律事務所や経営コンサルティング会社とどう違いますか?',
+    faq1_a:'Finoraは独立系のクロスボーダー・アドバイザリーファームです。特定の管轄内での法的代理に特化する従来の法律事務所や、事業運営全般を扱う経営コンサルティング会社とは異なり、Finoraは全体を見渡す商業戦略、フォレンジック分析、そして複数の海外管轄・法分野にまたがる中心的な調整を提供します。',
+    faq2_q:'Finoraは法廷で直接代理人を務めますか?',
+    faq2_a:'いいえ、Finoraは訴訟代理人としては活動しません。クロスボーダーの全体戦略を設計し、財務・技術面のフォレンジックを実施し、各管轄の専門的な現地法律事務所を指揮して、クライアントに代わって法廷で戦略を実行します。',
+    faq3_q:'Finoraはどのようなクライアントを支援していますか?',
+    faq3_a:'高額かつ複数管轄にまたがる金融・法務上の課題に直面する、経営者、取締役、ファミリーオフィス、機関投資家、法務責任者、破産管財人、企業の法務チームなど、シニアの意思決定者を支援しています。',
+    faq4_q:'クロスボーダー案件で、Finoraはどのように機密性を維持しますか?',
+    faq4_a:'すべてのクライアントとのやり取りは、厳格な職業上の守秘義務とデータセキュリティのプロトコルに従います。必要に応じ、法律顧問と連携して業務を構成し、関係する管轄における法律専門職の秘匿特権の対象となるようにします。',
+    faq5_q:'Finoraに依頼するのに最適なタイミングはいつですか?',
+    faq5_a:'クロスボーダーの複雑さや摩擦の最初の兆しが見えた段階、多くの場合は正式な法的手続を開始する前が最も効果的です。早期にご相談いただくことで、各者の立場が固まる前に、国際戦略を形づくり、証拠を保全し、管轄の選択肢を評価できます。',
+    faq_contact_prompt:'ご自身の案件について、具体的なご質問はありますか?',faq_contact_btn:'機密のお問い合わせを送る',
+    contact_tag:'アドバイザリーのお問い合わせ',contact_title:'機密のご相談を始めましょう。',
+    contact_intro:'当社のシニアアドバイザーが、適格な企業・機関・専門職のクライアントの複雑なクロスボーダー案件を検討いたします。',
+    contact_notice:'すべてのご連絡は、当社のシニアアドバイザーが直接受け取り、厳格な職業上の守秘義務のもとで取り扱います。',
+    contact_firstname:'名 *',contact_lastname:'姓 *',contact_email:'勤務先メールアドレス *',contact_phone:'直通電話番号(任意)',
+    contact_org:'組織名 / 事務所名 *',contact_role:'役職 / 肩書 *',
+    contact_type:'案件の種類 *',contact_type_select:'— 主な分野を選択 —',
+    contact_jurisdictions:'関係する管轄',contact_juris_ph:'例:英国、スイス、ドイツ、オフショア管轄',
+    contact_summary:'案件の概要 *',contact_summary_ph:'クロスボーダー課題の事実関係を簡潔にご記入ください…',
+    contact_send:'相談を申し込む',contact_disclaimer:'職業上の守秘義務 · 完全な機密保持 · GDPR',
+    contact_success_title:'送信が完了しました',contact_success_text:'当社のシニアアドバイザーが内容を確認し、適切な進め方についてまもなくご連絡いたします。',
+    contact_details_title:'連絡先',contact_addr_reg_label:'登録アドバイザリーオフィス',contact_addr_zurich_label:'チューリッヒオフィス',
+    contact_hours:'月〜金:09:00〜18:00(CET)',
+    contact_standards_title:'職業基準に関するお知らせ',
+    contact_standards_text:'Finoraは戦略的アドバイザリーサービスを提供します。Finoraはリテール金融機関、銀行、貸し手、ソフトウェア提供者、法律事務所ではありません。',
+    case_t_1:'クロスボーダー紛争',case_t_2:'資産追跡',case_t_6:'規制当局対応',case_t_adv:'一般アドバイザリー',
+    badge_intl:'国際',badge_conf:'機密',
+    footer_tagline:'複雑な金融・法務・商務案件に対し、戦略的な明確さ、フォレンジック分析、連携された専門知見を提供する、独立系の国際クロスボーダー・アドバイザリーファーム。',
+    footer_about_col:'当社について',footer_a1:'会社プロフィール',footer_a2:'戦略的哲学',footer_a3:'行動原則',
+    footer_services_col:'業務分野',footer_process:'アドバイザリー・プロセス',
+    footer_contact_col:'お問い合わせ',footer_zurich:'Bahnhofstrasse 100, Zürich',
+    footer_rights:'© 2026 Finora. All rights reserved.',footer_reg:'登録番号:CH-626.2.026.046-6',
+    imprint_title:'法的通知 / Impressum',imprint_h_company:'会社情報',imprint_h_contact:'連絡先',imprint_h_offices:'事業所',
+    imprint_h_disclaimer:'免責事項',imprint_h_standards:'職業基準',imprint_h_gdpr:'データ保護',imprint_reg:'登録番号:',
+    imprint_zurich:'チューリッヒオフィス:',imprint_hours:'営業時間:月曜〜金曜 09:00〜18:00(CET)',
+    imprint_disclaimer:'本ウェブサイトの内容は一般的な情報提供のみを目的としており、法的助言を構成するものではありません。Finoraは戦略的アドバイザリーサービスを提供するものであり、法律事務所、銀行、貸し手、規制対象の金融機関ではありません。個別の案件については、専門家の助言をお求めください。',
+    imprint_standards:'Finoraは独立系の国際クロスボーダー・アドバイザリーファームとして活動しています。Finoraはリテール金融機関、銀行、貸し手、ソフトウェア提供者、法律事務所ではありません。すべてのアドバイザリー業務は職業上の守秘義務の対象です。',
+    imprint_gdpr:'規則(EU)2016/679(GDPR)に完全に準拠しています。データは戦略的相談の目的にのみ処理されます。',
+    privacy_title:'プライバシーポリシー',
+    priv_h1:'1. データ管理者',priv_h2:'2. データ処理の目的',priv_h3:'3. 法的根拠',priv_h4:'4. お客様の権利(GDPR)',priv_h5:'5. 機密保持',priv_h6:'6. データセキュリティ',priv_h7:'7. Cookie',
+    priv_p2:'お問い合わせフォームおよび相談申込フォームから送信された個人データは、戦略的アドバイザリーに関するお問い合わせの確認と回答の目的にのみ処理します。別途のご同意なくマーケティング目的で使用することはありません。',
+    priv_p3:'処理は、お客様の同意(GDPR第6条1項(a))、および該当する場合はアドバイザリーサービス提供に関する正当な利益(同第6条1項(f))に基づきます。',
+    priv_p4:'お客様には、アクセス(第15条)、訂正(第16条)、消去(第17条)、処理の制限(第18条)、データポータビリティ(第20条)の権利があり、いつでも同意を撤回できます。撤回前の処理の適法性には影響しません。',
+    priv_p5:'Finoraに送信されたすべての情報は、厳格な職業上の守秘義務のもとで取り扱います。法令または適用される職業上の義務で必要な場合を除き、お客様の明示的な同意なく第三者に開示することはありません。',
+    priv_p6:'不正アクセス、開示、改ざん、紛失から個人データを保護するため、適切な技術的・組織的措置を講じています。すべての通信は暗号化された経路で送信されます。',
+    priv_p7:'本ウェブサイトは、全体的なパフォーマンス測定に用いるGoogle Analytics(gtag)を除き、トラッキングCookieや第三者の分析ツールを使用しません。お客様の知らないところで、自動的な手段により個人データが収集されることはありません。'
+  }
 };
 
-var currentLang = 'ar';
+var currentLang = 'en';
 
-function t(key){ return (T[currentLang]&&T[currentLang][key])||(T.de[key])||key; }
+function t(key){ return (T[currentLang]&&T[currentLang][key])||(T.en[key])||key; }
 
 function applyTranslations(){
   document.querySelectorAll('[data-i18n]').forEach(function(el){
@@ -2422,7 +2581,8 @@ function applyTranslations(){
   });
   /* Update nav sub-text */
   var sub = document.getElementById('nav-sub');
-  if(sub) sub.innerHTML = currentLang==='en' ? 'Cross-Border<br>Advisory' : (currentLang==='ar' ? 'استشارات<br>عابرة للحدود' : 'Grenzüberschreitende<br>Beratung');
+  var subs={en:'Cross-Border<br>Advisory',de:'Grenzüberschreitende<br>Beratung',ar:'استشارات<br>عابرة للحدود',ja:'クロスボーダー<br>アドバイザリー'};
+  if(sub) sub.innerHTML = subs[currentLang];
   /* Update meta tags */
   var mt=document.getElementById('meta-title');
   if(mt) mt.textContent=t('meta_title');
@@ -2435,14 +2595,13 @@ function applyTranslations(){
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang==='ar' ? 'rtl' : 'ltr';
   var ogl=document.querySelector('meta[property="og:locale"]');
-  if(ogl) ogl.setAttribute('content',{de:'de_DE',en:'en_GB',ar:'ar_AE'}[currentLang]);
+  if(ogl) ogl.setAttribute('content',{de:'de_DE',en:'en_GB',ar:'ar_AE',ja:'ja_JP'}[currentLang]);
 }
 
 function setLang(lang){
   currentLang=lang;
-  document.getElementById('btn-de').classList.toggle('active',lang==='de');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('btn-ar').classList.toggle('active',lang==='ar');
+  ['de','en','ar','ja'].forEach(function(l){var b=document.getElementById('btn-'+l);if(b)b.classList.toggle('active',l===lang);});
+  try{localStorage.setItem('finora-lang',lang);}catch(e){}
   applyTranslations();
 }
 
@@ -2576,7 +2735,7 @@ if(window.innerWidth>960&&!window.matchMedia('(prefers-reduced-motion: reduce)')
 }
 
 /* ─── INIT ─── */
-applyTranslations();
+(function(){var saved=null;try{saved=localStorage.getItem('finora-lang');}catch(e){}setLang(T[saved]?saved:'en');})();
 </script>
 
 <script>
